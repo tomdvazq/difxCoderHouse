@@ -25,7 +25,7 @@ html{
 body{
     font-family: Montserrat;
     font-size: 2rem;
-    background-color: rgb(22, 20, 20);
+    background-color: rgb(255, 255, 255);
     color: white;
 }
 
@@ -59,7 +59,7 @@ header{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background-color: rgb(32, 30, 30);
+    background-color: rgb(223, 221, 221);
     z-index: 1;
 }
 
@@ -85,7 +85,11 @@ header{
     color: white;
     font-family: Bleach;
     font-size: 5rem;
-    color: goldenrod;
+    background: -webkit-linear-gradient(to right, #ff00dd, #822b72); 
+    background: linear-gradient(to right, #ff00dd, #822b72);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .nav{
@@ -111,8 +115,8 @@ header{
 
 .sidebar--li:hover{
     transition: 1s;
-    background-color: rgb(218, 165, 32, 0.8);
-
+    background-color: rgba(158, 18, 151, 0.5);
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
 }
 
 .collab{
@@ -126,7 +130,7 @@ header{
 .nav-btn{
     font-size: 3rem;
     margin: 0px 10px;
-    color: white;
+    color: rgb(0, 0, 0);
     cursor: pointer;
 }
 
@@ -152,11 +156,23 @@ header{
 .mainData--h2{
     font-size: 2.5rem;
     padding: 0px 20px;
+    background: #9e35bb; 
+    background: -webkit-linear-gradient(to right, #9e35bb, #fa00cc); 
+    background: linear-gradient(to right, #9e35bb, #fa00cc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .mainData--p{
     font-size: 1.5rem;
     padding: 10px;
+    background: #ff00dd; 
+    background: -webkit-linear-gradient(to right, #ff00dd, #822b72); 
+    background: linear-gradient(to right, #ff00dd, #822b72);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .mainData--2{
@@ -167,18 +183,32 @@ header{
 .mainData__2--h2{
     font-size: 2.5rem;
     padding: 0px 20px;
+    background: #9e35bb; 
+    background: -webkit-linear-gradient(to right, #9e35bb, #fa00cc); 
+    background: linear-gradient(to right, #9e35bb, #fa00cc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .mainData__2--p{
     font-size: 1.5rem;
     padding: 10px;
+    background: #ff00dd; 
+    background: -webkit-linear-gradient(to right, #ff00dd, #822b72); 
+    background: linear-gradient(to right, #ff00dd, #822b72);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .mainData__2--a{
     font-size: 1.5rem;
     padding: 5px;
-    background-color: goldenrod;
-    color: black;
+    background: #ff00dd; 
+    background: -webkit-linear-gradient(to right, #ff00dd, #822b72); 
+    background: linear-gradient(to right, #ff00dd, #822b72);
+    color: rgb(255, 255, 255);
     font-weight: bold;
     border-radius: 5px;
 }
@@ -194,6 +224,9 @@ header{
     border-radius: 5px;
     display: flex;
     flex-direction: column;
+    background: #9e35bb; 
+    background: -webkit-linear-gradient(to right, #9e35bb, #fa00cc); 
+    background: linear-gradient(to right, #9e35bb, #fa00cc);
 }
 
 .recurses--h2{
@@ -216,7 +249,8 @@ header{
     position: relative;
     bottom: 20px;
     border-radius: 5px;
-    background-color: rgb(22, 20, 20);
+    color: black;
+    background-color: rgb(255, 255, 255);
     justify-content: center;
 }
 
@@ -231,6 +265,9 @@ header{
     border-radius: 5px;
     display: flex;
     flex-direction: column;
+    background: #9e35bb; 
+    background: -webkit-linear-gradient(to right, #9e35bb, #fa00cc); 
+    background: linear-gradient(to right, #9e35bb, #fa00cc);
 }
 
 .whyfree--h2{
@@ -253,7 +290,8 @@ header{
     position: relative;
     bottom: 20px;
     border-radius: 5px;
-    background-color: rgb(22, 20, 20);
+    color: black;
+    background-color: rgb(255, 255, 255);
     justify-content: center;
 }
 
@@ -318,7 +356,7 @@ a{
         justify-content: space-between;
         align-items: center;
         width: 100vw;
-        background-color: rgb(32, 30, 30);
+        background-color: rgb(223, 221, 221);
         box-shadow: 1px 1px 1px 1px black;
         z-index: 1;
     }
@@ -350,7 +388,11 @@ a{
         color: white;
         font-family: Bleach;
         font-size: 5rem;
-        color: goldenrod;
+        background: -webkit-linear-gradient(to right, #ff00dd, #822b72); 
+        background: linear-gradient(to right, #ff00dd, #822b72);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
     }
     
     .navbar{
@@ -376,8 +418,7 @@ a{
     
     .navbar--li:hover{
         transition: 1s;
-        background-color: rgb(218, 165, 32, 0.8);
-    
+        background-color: rgba(158, 18, 151, 0.5);
     }
     
     .navbar--a{
@@ -387,7 +428,7 @@ a{
     .internal__check--label{
         font-size: 3rem;
         margin: 0px 40px;
-        color: white;
+        color: rgb(0, 0, 0);
         cursor: pointer;
     }
     
@@ -422,8 +463,8 @@ a{
         margin: 0px;
         padding: 20px;
         width: 100vw;
-        background-color: rgb(15, 14, 14);
-        box-shadow: 1px 1px 1px 1px black;
+        background-color: rgb(44, 44, 44);
+        box-shadow: 1px 4px 20px rgb(255, 255, 255);
     }
 
     .filters{
@@ -433,8 +474,8 @@ a{
         width: 100vw;
         font-size: 1.4rem;
         padding: 16px;
-        background-color: rgb(27, 25, 25);
-        box-shadow: 1px 1px 1px 1px black;
+        background-color: rgb(223, 221, 221);
+        box-shadow: 1px 1px 4px rgb(255, 255, 255);
     }
 
     .boxes{
@@ -459,6 +500,11 @@ a{
     .dataSection--p{
         font-size: 0.9rem;
         margin: 1px;
+    }
+
+    .filters--h2{
+        color: black;
+        font-weight: bold;
     }
 
     /*BOXES*/
@@ -513,6 +559,8 @@ a{
         position: relative;
         top: 60px;
         font-size: 1.3rem;
+        color: black;
+        font-weight: bold;
     }
 
     /*FOOTER*/
@@ -562,7 +610,7 @@ a{
     body{
         font-family: Montserrat;
         font-size: 2rem;
-        background-color: rgb(22, 20, 20);
+        background-color: rgb(255, 255, 255);
         color: white;
     }
     
@@ -596,7 +644,7 @@ a{
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        background-color: rgb(32, 30, 30);
+        background-color: rgb(223, 221, 221);
         z-index: 1;
     }
     
@@ -622,7 +670,11 @@ a{
         color: white;
         font-family: Bleach;
         font-size: 5rem;
-        color: goldenrod;
+        background: -webkit-linear-gradient(to right, #ff00dd, #822b72); 
+        background: linear-gradient(to right, #ff00dd, #822b72);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
     }
     
     .nav{
@@ -648,8 +700,7 @@ a{
     
     .sidebar--li:hover{
         transition: 1s;
-        background-color: rgb(218, 165, 32, 0.8);
-    
+        background-color: rgba(158, 18, 151, 0.5); 
     }
     
     .sidebar--a{
@@ -659,7 +710,7 @@ a{
     .nav-btn{
         font-size: 3rem;
         margin: 0px 40px;
-        color: white;
+        color: rgb(0, 0, 0);
         cursor: pointer;
     }
     
@@ -685,11 +736,23 @@ a{
     .mainData--h2{
         font-size: 2.5rem;
         padding: 0px 20px;
+        background: #9e35bb; 
+        background: -webkit-linear-gradient(to right, #9e35bb, #fa00cc); 
+        background: linear-gradient(to right, #9e35bb, #fa00cc);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
     }
     
     .mainData--p{
         font-size: 1.5rem;
         padding: 10px;
+        background: #ff00dd; 
+        background: -webkit-linear-gradient(to right, #ff00dd, #822b72); 
+        background: linear-gradient(to right, #ff00dd, #822b72);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
     }
     
     .mainData--2{
@@ -700,11 +763,23 @@ a{
     .mainData__2--h2{
         font-size: 2.5rem;
         padding: 0px 20px;
+        background: #9e35bb; 
+        background: -webkit-linear-gradient(to right, #9e35bb, #fa00cc); 
+        background: linear-gradient(to right, #9e35bb, #fa00cc);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
     }
     
     .mainData__2--p{
         font-size: 1.5rem;
         padding: 10px;
+        background: #ff00dd; 
+        background: -webkit-linear-gradient(to right, #ff00dd, #822b72); 
+        background: linear-gradient(to right, #ff00dd, #822b72);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
     }
     
     .mainData__2--a{
@@ -712,8 +787,10 @@ a{
         padding: 5px;
         position: relative;
         top: 20px;
-        background-color: goldenrod;
-        color: black;
+        background: #ff00dd; 
+        background: -webkit-linear-gradient(to right, #ff00dd, #822b72); 
+        background: linear-gradient(to right, #ff00dd, #822b72);
+        color: rgb(255, 255, 255);
         font-weight: bold;
         border-radius: 5px;
     }
@@ -724,11 +801,13 @@ a{
     }
     
     .recurses{
-        background-color: gray;
         margin: 50px 20px;
         border-radius: 5px;
         display: flex;
         flex-direction: column;
+        background: #9e35bb; 
+        background: -webkit-linear-gradient(to right, #9e35bb, #fa00cc); 
+        background: linear-gradient(to right, #9e35bb, #fa00cc);
     }
     
     .recurses--h2{
@@ -751,21 +830,24 @@ a{
         position: relative;
         bottom: 20px;
         border-radius: 5px;
-        background-color: rgb(22, 20, 20);
+        color: black;
+        background-color: rgb(255, 255, 255);
         justify-content: center;
     }
     
     .fa-camera{
-        font-size: 30px;
+        font-size: 40px;
         align-self: center;
     }
     
     .whyfree{
-        background-color: gray;
         margin: 50px 20px;
         border-radius: 5px;
         display: flex;
         flex-direction: column;
+        background: #9e35bb; 
+        background: -webkit-linear-gradient(to right, #9e35bb, #fa00cc); 
+        background: linear-gradient(to right, #9e35bb, #fa00cc);
     }
     
     .whyfree--h2{
@@ -788,12 +870,13 @@ a{
         position: relative;
         bottom: 20px;
         border-radius: 5px;
-        background-color: rgb(22, 20, 20);
+        color: black;
+        background-color: rgb(255, 255, 255);
         justify-content: center;
     }
     
     .fa-comment-dollar{
-        font-size: 30px;
+        font-size: 40px;
         align-self: center;
     }
     
@@ -854,7 +937,7 @@ a{
         justify-content: space-between;
         align-items: center;
         width: 100vw;
-        background-color: rgb(32, 30, 30);
+        background-color: rgb(223, 221, 221);
         box-shadow: 1px 1px 1px 1px black;
         z-index: 1;
     }
@@ -883,10 +966,13 @@ a{
     .internal__logo{
         margin: 0px 10px;
         text-decoration: none;
-        color: white;
         font-family: Bleach;
         font-size: 5rem;
-        color: goldenrod;
+        background: -webkit-linear-gradient(to right, #ff00dd, #822b72); 
+        background: linear-gradient(to right, #ff00dd, #822b72);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
     }
     
     .navbar{
@@ -912,8 +998,7 @@ a{
     
     .navbar--li:hover{
         transition: 1s;
-        background-color: rgb(218, 165, 32, 0.8);
-    
+        background-color: rgba(158, 18, 151, 0.5);
     }
     
     .navbar--a{
@@ -923,7 +1008,7 @@ a{
     .internal__check--label{
         font-size: 3rem;
         margin: 0px 40px;
-        color: white;
+        color: rgb(0, 0, 0);
         cursor: pointer;
     }
     
@@ -958,8 +1043,8 @@ a{
         margin: 0px;
         padding: 20px;
         width: 100vw;
-        background-color: rgb(15, 14, 14);
-        box-shadow: 1px 1px 1px 1px black;
+        background-color: rgb(44, 44, 44);
+        box-shadow: 1px 4px 20px rgb(255, 255, 255);
     }
 
     .filters{
@@ -969,8 +1054,8 @@ a{
         width: 100vw;
         font-size: 1.5rem;
         padding: 15px;
-        background-color: rgb(27, 25, 25);
-        box-shadow: 1px 1px 1px 1px black;
+        background-color: rgb(223, 221, 221);
+        box-shadow: 1px 1px 4px rgb(255, 255, 255);
     }
 
     .boxes{
@@ -995,6 +1080,11 @@ a{
     .dataSection--p{
         font-size: 1rem;
         margin: 1px;
+    }
+
+    .filters--h2{
+        color: black;
+        font-weight: bold;
     }
 
     /*BOXES*/
@@ -1049,6 +1139,8 @@ a{
         position: relative;
         top: 80px;
         font-size: 1.7rem;
+        color: black;
+        font-weight: bold;
     }
 
     /*FOOTER*/
@@ -1099,7 +1191,7 @@ a{
     body{
         font-family: Montserrat;
         font-size: 2rem;
-        background-color: rgb(22, 20, 20);
+        background-color: rgb(255, 255, 255);
         color: white;
     }
     
@@ -1133,7 +1225,7 @@ a{
         align-items: center;
         width: 100%;
         height: 80px;
-        background-color: rgb(32, 30, 30);
+        background-color: rgb(223, 221, 221);
         z-index: 1;
     }
     
@@ -1157,7 +1249,11 @@ a{
         color: white;
         font-family: Bleach;
         font-size: 4rem;
-        color: goldenrod;
+        background: -webkit-linear-gradient(to right, #ff00dd, #822b72); 
+        background: linear-gradient(to right, #ff00dd, #822b72);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
     }
     
     .nav{
@@ -1174,13 +1270,20 @@ a{
         font-size: 1.4rem;
         padding: 0px 20px;
     }
+
+    .sidebar--li:hover{
+        transition: 1s;
+        background-color: rgba(158, 18, 151, 0.5);
+        box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    }
     
     .collab{
         display: none;
     }
         
     .sidebar--a{
-        color: white;
+        color: black;
+        font-weight: bold;
     }
     
     .nav-btn{
@@ -1209,9 +1312,11 @@ a{
         font-size: 1.3rem;
         margin: 0px 20px;
         padding: 10px;
-        background-color: goldenrod;
+        background: #ff00dd; 
+        background: -webkit-linear-gradient(to right, #ff00dd, #822b72); 
+        background: linear-gradient(to right, #ff00dd, #822b72);
         border-radius: 5px;
-        color: black;
+        color: rgb(255, 255, 255);
         font-weight: bold;
         cursor: pointer;
     }
@@ -1219,6 +1324,8 @@ a{
     .interfazUser--login{
         font-size: 1.3rem;
         padding: 10px;
+        color: black;
+        font-weight: bold;
     }
     
     .interfazUser--searcher{
@@ -1235,11 +1342,23 @@ a{
     .mainData--h2{
         font-size: 5rem;
         padding: 0px 20px;
+        background: #9e35bb; 
+        background: -webkit-linear-gradient(to right, #9e35bb, #fa00cc); 
+        background: linear-gradient(to right, #9e35bb, #fa00cc);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
     }
     
     .mainData--p{
         font-size: 2rem;
         padding: 10px;
+        background: #ff00dd; 
+        background: -webkit-linear-gradient(to right, #ff00dd, #822b72); 
+        background: linear-gradient(to right, #ff00dd, #822b72);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
     }
     
     .mainData--2{
@@ -1250,11 +1369,22 @@ a{
     .mainData__2--h2{
         font-size: 4rem;
         padding: 0px 20px;
+        background: -webkit-linear-gradient(to right, #9e35bb, #fa00cc); 
+        background: linear-gradient(to right, #9e35bb, #fa00cc);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
     }
     
     .mainData__2--p{
         font-size: 2rem;
         padding: 10px;
+        background: #ff00dd; 
+        background: -webkit-linear-gradient(to right, #ff00dd, #822b72); 
+        background: linear-gradient(to right, #ff00dd, #822b72);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
     }
     
     .mainData__2--a{
@@ -1262,8 +1392,10 @@ a{
         padding: 5px;
         position: relative;
         top: 20px;
-        background-color: goldenrod;
-        color: black;
+        background: #ff00dd; 
+        background: -webkit-linear-gradient(to right, #ff00dd, #822b72); 
+        background: linear-gradient(to right, #ff00dd, #822b72);
+        color: rgb(255, 255, 255);
         font-weight: bold;
         border-radius: 5px;
     }
@@ -1278,25 +1410,29 @@ a{
     }
     
     .recurses{
-        background-color: gray;
         height: 300px;
         width: 300px;
         margin: 50px 20px;
         border-radius: 5px;
         display: flex;
         flex-direction: column;
+        background: #9e35bb; 
+        background: -webkit-linear-gradient(to right, #9e35bb, #fa00cc); 
+        background: linear-gradient(to right, #9e35bb, #fa00cc);
     }
     
     .recurses--h2{
         font-size: 3rem;
         position: relative;
         bottom: 20px;
+        color: white;
     }
     
     .recurses--p{
         font-size: 1.5rem;
         position: relative;
         padding: 0px 20px;
+        color: white;
     }
     
     .recurses--img{
@@ -1307,7 +1443,8 @@ a{
         position: relative;
         bottom: 20px;
         border-radius: 5px;
-        background-color: rgb(22, 20, 20);
+        color: black;
+        background-color: rgb(255, 255, 255);
         justify-content: center;
     }
     
@@ -1317,13 +1454,15 @@ a{
     }
     
     .whyfree{
-        background-color: gray;
         height: 300px;
         width: 300px;
         margin: 50px 20px;
         border-radius: 5px;
         display: flex;
         flex-direction: column;
+        background: #9e35bb; 
+        background: -webkit-linear-gradient(to right, #9e35bb, #fa00cc); 
+        background: linear-gradient(to right, #9e35bb, #fa00cc);
     }
     
     .whyfree--h2{
@@ -1346,7 +1485,8 @@ a{
         position: relative;
         bottom: 20px;
         border-radius: 5px;
-        background-color: rgb(22, 20, 20);
+        color: black;
+        background-color: rgb(255, 255, 255);
         justify-content: center;
     }
     
@@ -1421,7 +1561,7 @@ a{
             height: 80px;
             width: 100%;
             padding: 40px;
-            background-color: rgb(32, 30, 30);
+            background-color: rgb(223, 221, 221);
             box-shadow: 1px 1px 4px black;
         }
     
@@ -1451,7 +1591,11 @@ a{
         .internal__logo{
             font-family: Bleach;
             font-size: 4rem;
-            color: goldenrod;
+            background: -webkit-linear-gradient(to right, #ff00dd, #822b72); 
+            background: linear-gradient(to right, #ff00dd, #822b72);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
             position: fixed;
         }
     
@@ -1467,6 +1611,18 @@ a{
             font-size: 1.4rem;
             padding: 15px;
             position: relative;
+        }
+
+        .navbar--a{
+            color: black;
+            font-weight: bold;
+        }
+
+        .navbar--li:hover{
+            transition: .3s;
+            padding: 10px;
+            background-color: rgba(158, 18, 151, 0.2);
+            border-radius: 5px;
         }
     
         .user--interactive{
@@ -1503,11 +1659,11 @@ a{
             grid-column: 1/7;
             grid-row: 1/2;
             width: 100vw;
-            background-color: rgb(15, 14, 14);
+            background-color: rgb(44, 44, 44);
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            box-shadow: 1px 4px 20px black;
+            box-shadow: 1px 4px 20px rgb(255, 255, 255);
             z-index: -1;
         }
     
@@ -1516,8 +1672,8 @@ a{
             grid-column: 1/7;
             grid-row: 2/3;
             height: 80px;
-            background-color: rgb(27, 25, 25);
-            box-shadow: 1px 1px 4px black;
+            background-color: rgb(223, 221, 221);
+            box-shadow: 1px 1px 4px rgb(255, 255, 255);
         }
     
         .boxes{
@@ -1538,6 +1694,7 @@ a{
             font-size: 1.2rem;
             position: relative;
             top: 20px;
+            color: white;
         }
         
         .dataSection--h3{
@@ -1545,6 +1702,7 @@ a{
             font-size: 3.5rem;
             position: relative;
             bottom: 10px;
+            color: white;
         }
     
         .dataSection--p{
@@ -1552,6 +1710,7 @@ a{
             font-size: 1rem;
             position: relative;
             bottom: 30px;
+            color: white;
         }
     
         /*FILTERS*/
@@ -1560,6 +1719,8 @@ a{
             padding: 20px;
             text-align: start;
             font-size: 2.5rem;
+            color: black;
+            font-weight: bold;
         }
     
         /*BOXES*/
@@ -1570,7 +1731,7 @@ a{
             grid-row: 1;
             height: 175px;
             width: 175px;
-            border: solid 4px white;
+            border: solid 4px rgb(0, 0, 0);
         }
     
         .boxes2{
@@ -1594,7 +1755,7 @@ a{
             grid-row: 1;
             height: 175px;
             width: 175px;
-            border: solid 4px rgb(105, 107, 10);
+            border: solid 4px rgb(0, 0, 0);
         }
     
         .boxes5{
@@ -1602,7 +1763,7 @@ a{
             grid-row: 3;
             height: 175px;
             width: 175px;
-            border: solid 4px white;
+            border: solid 4px rgb(0, 0, 0);
         }
     
         .boxes6{
@@ -1635,6 +1796,8 @@ a{
             position: relative;
             top: 70px;
             font-size: 1.5rem;
+            color: black;
+            font-weight: bold;
             z-index: -1;
         }
     
@@ -1688,8 +1851,7 @@ a{
     body{
         font-family: Montserrat;
         font-size: 2rem;
-        background-color: rgb(22, 20, 20);
-        color: white;
+        background-color: rgb(255, 255, 255);
     }
     
     /*grid-container*/
@@ -1722,7 +1884,7 @@ a{
         align-items: center;
         width: 100%;
         height: 80px;
-        background-color: rgb(32, 30, 30);
+        background-color: rgb(223, 221, 221);
         z-index: 1;
     }
     
@@ -1736,6 +1898,7 @@ a{
     
     .difxFooter{
         grid-area: footer;
+        background-color: rgb(223, 221, 221);
     }
     
     /*HEADER AND NAVBAR*/
@@ -1746,7 +1909,11 @@ a{
         color: white;
         font-family: Bleach;
         font-size: 4rem;
-        color: goldenrod;
+        background: -webkit-linear-gradient(to right, #ff00dd, #822b72); 
+        background: linear-gradient(to right, #ff00dd, #822b72);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
     }
     
     .nav{
@@ -1763,13 +1930,20 @@ a{
         font-size: 1.4rem;
         padding: 0px 20px;
     }
+
+    .sidebar--li:hover{
+        transition: 1s;
+        background-color: rgba(158, 18, 151, 0.5);
+        box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    }
     
     .collab{
         display: none;
     }
     
     .sidebar--a{
-        color: white;
+        color: black;
+        font-weight: bold;
     }
     
     .nav-btn{
@@ -1798,16 +1972,20 @@ a{
         font-size: 1.3rem;
         margin: 0px 20px;
         padding: 10px;
-        background-color: goldenrod;
         border-radius: 5px;
-        color: black;
+        color: rgb(255, 255, 255);
         font-weight: bold;
+        background: #ff00dd; 
+        background: -webkit-linear-gradient(to right, #ff00dd, #822b72); 
+        background: linear-gradient(to right, #ff00dd, #822b72);
         cursor: pointer;
     }
     
     .interfazUser--login{
         font-size: 1.3rem;
         padding: 10px;
+        color: black;
+        font-weight: bold;
     }
     
     .interfazUser--searcher{
@@ -1824,11 +2002,23 @@ a{
     .mainData--h2{
         font-size: 5rem;
         padding: 0px 20px;
+        background: #9e35bb; 
+        background: -webkit-linear-gradient(to right, #9e35bb, #fa00cc); 
+        background: linear-gradient(to right, #9e35bb, #fa00cc);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
     }
     
     .mainData--p{
         font-size: 2rem;
         padding: 10px;
+        background: #ff00dd; 
+        background: -webkit-linear-gradient(to right, #ff00dd, #822b72); 
+        background: linear-gradient(to right, #ff00dd, #822b72);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
     }
     
     .mainData--2{
@@ -1839,11 +2029,22 @@ a{
     .mainData__2--h2{
         font-size: 4rem;
         padding: 0px 20px;
+        background: -webkit-linear-gradient(to right, #9e35bb, #fa00cc); 
+        background: linear-gradient(to right, #9e35bb, #fa00cc);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
     }
     
     .mainData__2--p{
         font-size: 2rem;
         padding: 10px;
+        background: #ff00dd; 
+        background: -webkit-linear-gradient(to right, #ff00dd, #822b72); 
+        background: linear-gradient(to right, #ff00dd, #822b72);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
     }
     
     .mainData__2--a{
@@ -1851,8 +2052,10 @@ a{
         padding: 5px;
         position: relative;
         top: 20px;
-        background-color: goldenrod;
-        color: black;
+        background: #ff00dd; 
+        background: -webkit-linear-gradient(to right, #ff00dd, #822b72); 
+        background: linear-gradient(to right, #ff00dd, #822b72);
+        color: rgb(255, 255, 255);
         font-weight: bold;
         border-radius: 5px;
     }
@@ -1867,25 +2070,29 @@ a{
     }
     
     .recurses{
-        background-color: gray;
         height: 300px;
         width: 300px;
         margin: 50px 20px;
         border-radius: 5px;
         display: flex;
         flex-direction: column;
+        background: #9e35bb; 
+        background: -webkit-linear-gradient(to right, #9e35bb, #fa00cc); 
+        background: linear-gradient(to right, #9e35bb, #fa00cc);
     }
     
     .recurses--h2{
         font-size: 3rem;
         position: relative;
         bottom: 20px;
+        color: white;
     }
     
     .recurses--p{
         font-size: 1.5rem;
         position: relative;
         padding: 0px 20px;
+        color: white;
     }
     
     .recurses--img{
@@ -1896,7 +2103,7 @@ a{
         position: relative;
         bottom: 20px;
         border-radius: 5px;
-        background-color: rgb(22, 20, 20);
+        background-color: rgb(255, 255, 255);
         justify-content: center;
     }
     
@@ -1906,25 +2113,29 @@ a{
     }
     
     .whyfree{
-        background-color: gray;
         height: 300px;
         width: 300px;
         margin: 50px 20px;
         border-radius: 5px;
         display: flex;
         flex-direction: column;
+        background: #9e35bb; 
+        background: -webkit-linear-gradient(to right, #9e35bb, #fa00cc); 
+        background: linear-gradient(to right, #9e35bb, #fa00cc);
     }
     
     .whyfree--h2{
         font-size: 3rem;
         position: relative;
         bottom: 20px;
+        color: white;
     }
     
     .whyfree--p{
         font-size: 1.5rem;
         position: relative;
         padding: 0px 20px;
+        color: white;
     }
     
     .whyfree--img{
@@ -1935,7 +2146,7 @@ a{
         position: relative;
         bottom: 20px;
         border-radius: 5px;
-        background-color: rgb(22, 20, 20);
+        background-color: rgb(255, 255, 255);
         justify-content: center;
     }
     
@@ -1960,6 +2171,7 @@ a{
         align-self: flex-start;
         position: relative;
         top: 20px;
+        color: white;
     }
     
     .social{
@@ -1968,18 +2180,20 @@ a{
         align-self: flex-start;
         position: relative;
         top: 25px;
+        color: white;
     }
     
     .copyright{
         font-size: 1.4rem;
         padding: 5px 10px;
         align-self: flex-end;
+        color: white;
     }
     
     /*RANDOM PROPIETIES*/
     
     a{
-        color: white;
+        color: rgb(255, 255, 255);
     }
     
     /*INTERNAL*/
@@ -2010,7 +2224,7 @@ a{
         height: 80px;
         width: 100%;
         padding: 40px;
-        background-color: rgb(32, 30, 30);
+        background-color: rgb(223, 221, 221);
         box-shadow: 1px 1px 4px black;
     }
 
@@ -2039,7 +2253,11 @@ a{
     .internal__logo{
         font-family: Bleach;
         font-size: 4.5rem;
-        color: goldenrod;
+        background: -webkit-linear-gradient(to right, #ff00dd, #822b72); 
+        background: linear-gradient(to right, #ff00dd, #822b72);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
         position: fixed;
     }
 
@@ -2057,6 +2275,18 @@ a{
         left: 80px;
     }
 
+    .navbar--a{
+        color: black;
+        font-weight: bold;
+    }
+
+    .navbar--li:hover{
+        transition: .3s;
+        padding: 10px;
+        background-color: rgba(158, 18, 151, 0.2);
+        border-radius: 5px;
+    }
+
     .user--interactive{
         display: flex;
         align-items: center;
@@ -2069,9 +2299,16 @@ a{
         margin: 0px 40px;
         padding: 5px;
         border-radius: 5px;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        background: #ff00dd; 
+        background: -webkit-linear-gradient(to right, #ff00dd, #822b72); 
+        background: linear-gradient(to right, #ff00dd, #822b72);
+    }
+
+    .user--login{
         color: black;
         font-weight: bold;
-        background-color: goldenrod;
     }
 
     /*GRID MAIN*/
@@ -2094,19 +2331,19 @@ a{
         grid-row: 1/2;
         height: auto;
         width: 100vw;
-        background-color: rgb(15, 14, 14);
+        background-color: rgb(44, 44, 44);
         display: flex;
         flex-direction: column;
+        box-shadow: 1px 4px 20px rgb(255, 255, 255);
         flex-wrap: wrap;
-        box-shadow: 1px 4px 20px black;
     }
 
     .filters{
         grid-area: filters;
         grid-column: 1/2;
         grid-row: 2/7;
-        background-color: rgb(27, 25, 25);
-        box-shadow: 1px 1px 4px black;
+        background-color: rgb(223, 221, 221);
+        box-shadow: 1px 1px 4px rgb(255, 255, 255);
     }
 
     .boxes{
@@ -2124,16 +2361,20 @@ a{
     .dataSection--h2{
         margin: 30px 320px;
         font-size: 1.5rem;
+        color: white;
     }
     
     .dataSection--h3{
         margin: 0px 320px;
         font-size: 3rem;
+        color: white;
+        font-weight: bold;
     }
 
     .dataSection--p{
         margin: 30px 320px;
         font-size: 1rem;
+        color: white;
     }
 
     /*FILTERS*/
@@ -2142,6 +2383,8 @@ a{
         padding: 20px;
         text-align: start;
         font-size: 2.5rem;
+        color: black;
+        font-weight: bold;
     }
 
     /*BOXES*/
@@ -2151,7 +2394,7 @@ a{
         grid-row: 1;
         height: 200px;
         width: 200px;
-        border: solid 4px white;
+        border: solid 4px rgb(0, 0, 0);
     }
 
     .boxes2{
@@ -2183,7 +2426,7 @@ a{
         grid-row: 3;
         height: 200px;
         width: 200px;
-        border: solid 4px white;
+        border: solid 4px rgb(0, 0, 0);
     }
 
     .boxes6{
@@ -2224,12 +2467,14 @@ a{
         font-size: 1.5rem;
         position: relative;
         top: 20px;
+        color: white;
     }
 
     .internal__social{
         font-size: 1.5rem;
         position: relative;
         top: 25px;
+        color: white;
     }
 
     .internal__copyright{
@@ -2237,6 +2482,7 @@ a{
         position: relative;
         top: 10px;
         align-self: flex-end;
+        color: white;
     }
 }
 
@@ -2266,7 +2512,7 @@ a{
     body{
         font-family: Montserrat;
         font-size: 2rem;
-        background-color: rgb(22, 20, 20);
+        background-color: rgb(255, 255, 255);
         color: white;
     }
     
@@ -2299,9 +2545,8 @@ a{
         align-items: center;
         width: 200px;
         height: 100vh;
-        background-color: rgb(32, 30, 30);
+        background-color: rgb(223, 221, 221);
         z-index: 1;
-        box-shadow: 1px 1px 5px black;
     }
     
     .interfazUser{
@@ -2331,7 +2576,7 @@ a{
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        background-color: black;
+        background-color: rgb(223, 221, 221);
     }
 
     /*HEADER AND NAVBAR*/
@@ -2339,10 +2584,13 @@ a{
     .logo{
         margin: 40px;
         text-decoration: none;
-        color: white;
         font-family: Bleach;
         font-size: 8rem;
-        color: goldenrod;
+        background: -webkit-linear-gradient(to right, #ff00dd, #822b72); 
+        background: linear-gradient(to right, #ff00dd, #822b72);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
     }
     
     .nav{
@@ -2361,11 +2609,16 @@ a{
         padding: 30px 0px;
         width: 200px;
     }
+
+    .sidebar--a{
+        color: black;
+        font-weight: bold;
+    }
     
     .sidebar--li:hover{
         transition: 1s;
-        background-color: rgb(218, 165, 32, 0.5);
-        box-shadow: 0px 0px 10px black;
+        background-color: rgba(158, 18, 151, 0.5);
+        box-shadow: 0px 0px 10px rgb(255, 255, 255);
     
     }
     
@@ -2394,32 +2647,39 @@ a{
     .interfazUser--register{
         padding: 5px;
         border-radius: 5px;
-        color: black;
+        color: rgb(255, 255, 255);
         font-weight: bold;
-        background-color: goldenrod;
+        background: #ff00dd; 
+        background: -webkit-linear-gradient(to right, #ff00dd, #822b72); 
+        background: linear-gradient(to right, #ff00dd, #822b72);
     }
     
     .interfazUser--login{
         padding: 10px;
+        color: black;
+        font-weight: bold;
     }
     
     /*MAIN*/
     
     .interfazUser--searcher{
         width: 100vh;
-        background-color: rgb(32, 30, 30);
+        background-color: rgb(255, 255, 255);
+        margin: 0px 35px;
         padding: 0px 20px;
         border-radius: 5px;
-        border: none;
-        color: white;
+        border: 2px solid rgb(196, 193, 193);
+        color: black;
         font-size: 1.5rem;
     }
     
     .collab{
         display: flex;
         flex-wrap: nowrap;
-        color: black;
-        background-color: goldenrod;
+        color: rgb(255, 255, 255);
+        background: #ff00dd; 
+        background: -webkit-linear-gradient(to right, #ff00dd, #822b72); 
+        background: linear-gradient(to right, #ff00dd, #822b72);
         border-radius: 5px;
         align-items: center;
         cursor: pointer;
@@ -2427,7 +2687,7 @@ a{
     
     .collab--a{
         padding: 10px;
-        color: black;
+        color: rgb(255, 255, 255);
         font-weight: bold;
     }
     
@@ -2447,11 +2707,23 @@ a{
     .mainData--h2{
         font-size: 6rem;
         align-self: flex-start;
+        background: #9e35bb; 
+        background: -webkit-linear-gradient(to right, #9e35bb, #fa00cc); 
+        background: linear-gradient(to right, #9e35bb, #fa00cc);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
     }
     
     .mainData--p{
         font-size: 2.5rem;
         align-self: fle;
+        background: #ff00dd; 
+        background: -webkit-linear-gradient(to right, #ff00dd, #822b72); 
+        background: linear-gradient(to right, #ff00dd, #822b72);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
     }
     
     /*MAIN DATA 2*/
@@ -2468,17 +2740,31 @@ a{
     
     .mainData__2--h2{
         font-size: 6rem;
+        background: #9e35bb; 
+        background: -webkit-linear-gradient(to right, #9e35bb, #fa00cc); 
+        background: linear-gradient(to right, #9e35bb, #fa00cc);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
     }
     
     .mainData__2--p{
         font-size: 2rem;
+        background: #ff00dd; 
+        background: -webkit-linear-gradient(to right, #ff00dd, #822b72); 
+        background: linear-gradient(to right, #ff00dd, #822b72);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
     }
     
     .mainData__2--a{
         margin: 20px 0px;
         padding: 10px;
-        background-color: goldenrod;
-        color: black;
+        background: #ff00dd; 
+        background: -webkit-linear-gradient(to right, #ff00dd, #822b72); 
+        background: linear-gradient(to right, #ff00dd, #822b72);
+        color: rgb(255, 255, 255);
         font-weight: bold;
         border-radius: 5px;
     }
@@ -2495,12 +2781,14 @@ a{
     }
     
     .recurses{
-        background-color: gray;
         height: 300px;
         width: 400px;
         border-radius: 5px;
         margin: 0px 40px;
         padding: 20px;
+        background: #9e35bb; 
+        background: -webkit-linear-gradient(to right, #9e35bb, #fa00cc); 
+        background: linear-gradient(to right, #9e35bb, #fa00cc);
     }
     
     .recurses--h2{
@@ -2524,11 +2812,12 @@ a{
         left: 20px;
         bottom: 50px;
         border-radius: 5px;
-        background-color: rgb(22, 20, 20); 
+        color: black;
+        background-color: rgb(255, 255, 255); 
     }
     
     .fa-camera{
-        font-size: 30px;
+        font-size: 4rem;
     }
     
     .whyfree{
@@ -2538,6 +2827,9 @@ a{
         width: 400px;
         margin: 0px 40px;
         padding: 20px;
+        background: #9e35bb; 
+        background: -webkit-linear-gradient(to right, #9e35bb, #fa00cc); 
+        background: linear-gradient(to right, #9e35bb, #fa00cc);
     }
     
     .whyfree--h2{
@@ -2561,11 +2853,12 @@ a{
         left: 20px;
         bottom: 50px;
         border-radius: 5px;
-        background-color: rgb(22, 20, 20);
+        color: black;
+        background-color: rgb(255, 255, 255);
     }
     
     .fa-comment-dollar{
-        font-size: 30px;
+        font-size: 4rem;
     }
     
     /**FOOTER**/
@@ -2576,6 +2869,8 @@ a{
         top: 20px;
         font-size: 1.5rem;
         padding: 0px 10px;
+        color: black;
+        font-weight: bold;
     }
     
     .social{
@@ -2584,17 +2879,22 @@ a{
         top: 20px;
         font-size: 1.5rem;
         padding: 0px 10px;
+        color: black;
+        font-weight: bold;
     }
     
     .copyright{
         align-self: flex-end;
         padding: 0px 10px;
         font-size: 1.5rem;
+        color: black;
+        font-weight: bold;
     }
     /*RANDOM PROPIETIES*/
     
     a{
-        color: white;
+        color: black;
+        font-weight: bold;
     }
 
     /*INTERNAL*/
@@ -2625,8 +2925,8 @@ a{
         height: 80px;
         width: 100vw;
         padding: 40px;
-        background-color: rgb(32, 30, 30);
-        box-shadow: 1px 1px 4px black;
+        background-color: rgb(223, 221, 221);
+        box-shadow: 1px 1px 4px rgb(44, 44, 44);
     }
 
     .internal__difxFooter{
@@ -2653,7 +2953,11 @@ a{
     .internal__logo{
         font-family: Bleach;
         font-size: 6rem;
-        color: goldenrod;
+        background: -webkit-linear-gradient(to right, #ff00dd, #822b72); 
+        background: linear-gradient(to right, #ff00dd, #822b72);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
         position: fixed;
     }
 
@@ -2670,6 +2974,13 @@ a{
         left: 80px;
     }
 
+    .navbar--li:hover{
+        transition: .3s;
+        padding: 10px;
+        background-color: rgba(158, 18, 151, 0.2);
+        border-radius: 5px;
+    }
+
     .user--interactive{
         display: flex;
         align-items: center;
@@ -2680,11 +2991,13 @@ a{
 
     .user--register{
         margin: 0px 40px;
-        padding: 5px;
+        padding: 8px;
         border-radius: 5px;
-        color: black;
+        color: rgb(255, 255, 255);
         font-weight: bold;
-        background-color: goldenrod;
+        background: #ff00dd; 
+        background: -webkit-linear-gradient(to right, #ff00dd, #822b72); 
+        background: linear-gradient(to right, #ff00dd, #822b72);
     }
 
     /*GRID MAIN*/
@@ -2705,18 +3018,18 @@ a{
         grid-area: info;
         grid-column: 1/7;
         grid-row: 1/2;
-        background-color: rgb(15, 14, 14);
+        background-color: rgb(44, 44, 44);
         display: flex;
         flex-direction: column;
-        box-shadow: 1px 4px 20px black;
+        box-shadow: 1px 4px 20px rgb(255, 255, 255);
     }
 
     .filters{
         grid-area: filters;
         grid-column: 1/2;
         grid-row: 2/7;
-        background-color: rgb(27, 25, 25);
-        box-shadow: 1px 1px 4px black;
+        background-color: rgb(223, 221, 221);
+        box-shadow: 1px 1px 4px rgb(255, 255, 255);
     }
 
     .boxes{
@@ -2751,6 +3064,8 @@ a{
     .filters--h2{
         padding: 10px;
         font-size: 4rem;
+        color: black;
+        font-weight: bold;
     }
 
     /*BOXES*/
@@ -2761,7 +3076,7 @@ a{
         grid-row: 1;
         height: 250px;
         width: 250px;
-        border: solid 4px white;
+        border: solid 4px rgb(0, 0, 0);
     }
 
     .boxes2{
@@ -2793,7 +3108,7 @@ a{
         grid-row: 3;
         height: 250px;
         width: 250px;
-        border: solid 4px white;
+        border: solid 4px rgb(0, 0, 0);
     }
 
     .boxes6{
@@ -2826,6 +3141,8 @@ a{
         position: relative;
         top: 100px;
         z-index: -1;
+        color: black;
+        font-weight: bolder;
     }
 
     /*FOOTER*/
@@ -2844,6 +3161,9 @@ a{
         align-self: flex-end;
     }
 
+    .footer-a{
+        color: white;
+    }
 }
 
 
