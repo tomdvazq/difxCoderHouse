@@ -153,6 +153,10 @@ header{
     text-align: center;
 }
 
+.img{
+    display: none;
+}
+
 .mainData--h2{
     font-size: 2.5rem;
     padding: 0px 20px;
@@ -731,6 +735,10 @@ a{
     .mainData{
         margin: 40px 0px;
         text-align: center;
+    }
+
+    .img{
+        display: none;
     }
     
     .mainData--h2{
@@ -1339,6 +1347,10 @@ a{
         text-align: center;
     }
     
+    .img{
+        display: none;
+    }
+
     .mainData--h2{
         font-size: 5rem;
         padding: 0px 20px;
@@ -1998,6 +2010,10 @@ a{
         margin: 120px 0px;
         text-align: center;
     }
+
+    .img{
+        display: none;
+    }
     
     .mainData--h2{
         font-size: 5rem;
@@ -2528,7 +2544,7 @@ a{
             "header main main"
             "header footer footer";
         grid-template-columns: 200px 1fr 1fr;
-        grid-template-rows: 80px 1fr 1fr 80px;
+        grid-template-rows: 80px 1fr 700px 80px;
     }
     
     /*grid-areas*/
@@ -2576,7 +2592,7 @@ a{
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        background-color: rgb(223, 221, 221);
+        background-color: rgb(0, 0, 0);
     }
 
     /*HEADER AND NAVBAR*/
@@ -2621,7 +2637,6 @@ a{
         box-shadow: 0px 0px 10px rgb(255, 255, 255);
     
     }
-    
     
     .nav-btn{
         display: none;
@@ -2702,6 +2717,7 @@ a{
         position: relative;
         top: 100px;
         padding: 0px 60px;
+        z-index: 1;
     }
     
     .mainData--h2{
@@ -2734,7 +2750,7 @@ a{
         align-items: center;
         text-align: center;
         position: relative;
-        top: 400px;
+        top: 300px;
     
     }
     
@@ -2777,7 +2793,7 @@ a{
         align-items: center;
         justify-content: center;
         position: relative;
-        top: 700px;
+        top: 600px;
     }
     
     .recurses{
@@ -2868,8 +2884,8 @@ a{
         position: relative;
         top: 20px;
         font-size: 1.5rem;
-        padding: 0px 10px;
-        color: black;
+        padding: 0px 5px;
+        color: rgb(255, 255, 255);
         font-weight: bold;
     }
     
@@ -2878,22 +2894,22 @@ a{
         position: relative;
         top: 20px;
         font-size: 1.5rem;
-        padding: 0px 10px;
-        color: black;
+        padding: 0px 5px;
+        color: rgb(255, 255, 255);
         font-weight: bold;
     }
     
     .copyright{
         align-self: flex-end;
-        padding: 0px 10px;
+        padding: 0px 5px;
         font-size: 1.5rem;
-        color: black;
+        color: rgb(255, 255, 255);
         font-weight: bold;
     }
     /*RANDOM PROPIETIES*/
     
     a{
-        color: black;
+        color: rgb(255, 255, 255);
         font-weight: bold;
     }
 
@@ -2974,6 +2990,11 @@ a{
         left: 80px;
     }
 
+    .navbar--a{
+        color: black;
+        font-weight: bold;
+    }
+
     .navbar--li:hover{
         transition: .3s;
         padding: 10px;
@@ -2998,6 +3019,11 @@ a{
         background: #ff00dd; 
         background: -webkit-linear-gradient(to right, #ff00dd, #822b72); 
         background: linear-gradient(to right, #ff00dd, #822b72);
+    }
+
+    .user--login{
+        color: black;
+        font-weight: bold;
     }
 
     /*GRID MAIN*/
