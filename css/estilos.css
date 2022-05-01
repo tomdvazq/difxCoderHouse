@@ -1,5 +1,5 @@
 @font-face {
-    font-family: f;
+    font-family: Bleach;
     src: url(../fonts/Bleach.ttf);
 }
 
@@ -22,10 +22,48 @@ body{
 }
 
 .logo{
-    font-size: 40px;
+    font-family: Bleach;
+    font-size: 60px;
+    margin: 0px 40px;
 }
 
 .difxLink{
     font-size: 18px;
 }
 
+.difxNav .nav-item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.dropdown-toggle::after {
+    transition: transform 0.15s linear; 
+}
+
+.show.dropdown .dropdown-toggle::after {
+    transform: translateY(3px);
+}
+
+.dropdown-menu{
+    margin-top: 0;
+    border: solid 1px red;
+}
+
+@media screen and (max-width:992px) {
+
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        font-size: 80px;
+        border: solid 1px red;
+        position: relative;
+        bottom: 8px;
+    }
+    
+    .navbar-toggler{
+        border: solid 1px red;
+        position: relative;
+    }
+}
