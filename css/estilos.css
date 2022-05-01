@@ -1,0 +1,31 @@
+@font-face {
+    font-family: f;
+    src: url(../fonts/Bleach.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 10px;
+    background-color: #FF1FE4;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23000' stroke-width='66.7' stroke-opacity='0.05' %3E%3Ccircle fill='%23FF1FE4' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23ef20d8' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23e020cd' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23d11fc1' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23c21fb5' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23b31eaa' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23a51c9e' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23971b93' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23891987' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%237c177c' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%236f1570' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23621365' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%23561059' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%234b0e4e' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%233f0b43' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%23340839' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%232a062e' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23210024' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.difxNav{
+    height: 80px;
+}
+
+.logo{
+    font-size: 40px;
+}
+
+.difxLink{
+    font-size: 18px;
+}
+
