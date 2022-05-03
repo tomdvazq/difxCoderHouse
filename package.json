@@ -1,0 +1,22 @@
+{
+  "name": "desafioSass",
+  "version": "1.0.0",
+  "description": "Este proyecto tiene como intención acercarle herramientas de trabajo de manera gratuita a los usuarios para incentivar oportunidades laborales en distintos ámbitos del arte digital.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomdvazq/difxCoderHouse.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomdvazq/difxCoderHouse/issues"
+  },
+  "homepage": "https://github.com/tomdvazq/difxCoderHouse#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
