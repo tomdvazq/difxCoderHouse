@@ -4,64 +4,272 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../media/logo.jpg">
+    <link rel="shortcut icon" href="media/logo.jpg">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="../css/estilos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>DiFX: herramientas de creador</title>
 </head>
+
 <body>
-    <div class="internal__container">
-        <header class="internal__interfazWeb">
-            <a href="../index.html" class="internal__logo">DiFX</a>
-            <input type="checkbox" id="internal__check">
-            <label for="internal__check" class="internal__check--label">
-                <i class="fa-solid fa-bars"></i>
-            </label>
-            <ul class="navbar">
-                <li class="navbar--li"><a href="fxvideo.html" class="navbar--a">Edición de video</a></li>
-                <li class="navbar--li"><a href="fxsound.html" class="navbar--a">Edición de audio</a></li>
-                <li class="navbar--li"><a href="graphicdesign.html" class="navbar--a">Diseño Gráfico</a></li>
-                <li class="navbar--li"><a href="music.html" class="navbar--a">Música</a></li>
-                <li class="navbar--li"><a href="software.html" class="navbar--a">Software</a></li>
-            </ul>
+    <!-- HEADER -->
+    <header class="difxHeader">
+        <nav class="difxNav navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="logo navbar-brand" href="../index.html">DiFX</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-            <div class="user">
-                <div class="user--interactive">
-                    <a href="#" class="user--register">Register</a>
-                    <a href="#" class="user--login">Login</a>
-                </div>            
+                        <!-- EDICIÓN DE VIDEO -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link difxLink dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Efectos de video
+                            </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="fxvideo.html">Todos los productos</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item disabled" href="#">Adobe After Effects</a></li>
+                            <li><a class="dropdown-item disabled" href="#">Adobe Premiere Pro</a></li>                            
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item disabled" href="#">Da Vinci Resolve</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item disabled" href="#">Wondershare Filmora</a></li>
+                        </ul>
+                        </li>
+                        
+                        <!-- EDICIÓN DE AUDIO -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link difxLink dropdown-toggle disabled" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Efectos de audio
+                            </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item disabled" href="#">Todos los productos</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item disabled" href="#">PlugIns</a></li>
+                            <li><a class="dropdown-item disabled" href="#">Instrumentos Virtuales</a></li>                            
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item disabled" href="#">Drumkits</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item disabled" href="#">Plantillas</a></li>
+                        </ul>
+                        </li>
+
+                        <!-- DISEÑO GRÁFICO -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link difxLink dropdown-toggle disabled" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Diseño Gráfico
+                            </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item disabled" href="#">Todos los productos</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item disabled" href="#">Adobe Illustrator</a></li>
+                            <li><a class="dropdown-item disabled" href="#">Adobe Photoshop</a></li>                            
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item disabled" href="#">CorelDraw</a></li>
+                        </ul>
+                        </li>
+
+                        <!-- SOFTWARE -->
+                        <li class="nav-item">
+                            <a class="nav-link difxLink disabled" href="#" aria-expanded="false">
+                            Software
+                            </a>
+                        </li>
+                    </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="¿Que estás buscando?" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Buscar</button>
+                        </form>
+
+                </div>
             </div>
-        </header>
+        </nav>
+    </header>
 
-        <main class="internal__difxMain">
-            <div class="internal__main">
-                <div class="dataSection">
-                    <h2 class="dataSection--h2"><i>Categorías / Edición de video</i></h2>
-                    <h3 class="dataSection--h3"><b>Premiere Pro</b></h3>
-                    <p class="dataSection--p">Todos los productos que se exponen en esta categoría son únicamente compatibles con Adobe Premiere Pro. En algunos casos pueden ser utilizadas en Adobe After Effects.                    </p>
-                </div>
-
-                <div class="filters">
-                    <h2 class="filters--h2"><i>Filtros</i></h2>
-                </div>
-
-                <div class="boxes">
-                    <div class="boxes1"><p class="boxes--product">¡Soy un producto!</p></div>
-                    <div class="boxes2"><p class="boxes--product">¡Soy un producto!</p></div>
-                    <div class="boxes3"><p class="boxes--product">¡Soy un producto!</p></div>
-                    <div class="boxes4"><p class="boxes--product">¡Soy un producto!</p></div>
-                    <div class="boxes5"><p class="boxes--product">¡Soy un producto!</p></div>
-                    <div class="boxes6"><p class="boxes--product">¡Soy un producto!</p></div>
-                    <div class="boxes7"><p class="boxes--product">¡Soy un producto!</p></div>
-                    <div class="boxes8"><p class="boxes--product">¡Soy un producto!</p></div>
-                </div>
+    <!-- INTERNAL MAIN -->
+    <main class="difxInternalMain">
+        <div class="internalMain--data container-fluid">
+            <h2 class="internalMain__data--h2"><i>Categoría / <span class="importantWord">Edición de video</span></i></h2>
+            <h1 class="internalMain__data--h1">Todos los productos</h1>
+            <p class="internalMain__data--p">Todos los productos que se exponen en esta categoría estan dedicados a la edición de video.</p>
+        </div>
+        <article class="internalMain--cards">
+            <div class="difx__internal--cards internalCards--1">
+                <section class="card1">
+                    <div class="card--grid">
+                        <div class="containerCard">
+                            <a class="internalCard" href="#" style="--bg-img: url(https://miracomosehace.com/wp-content/uploads/2020/06/Ae-app.jpg)">
+                            <div>
+                                <h1><b>Producto</b></h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, reiciendis.</p>
+                                <div class="date"><b>Edición de video</b></div>
+                                <div class="tags">
+                                <div class="tag">After Effects</div>
+                                <div class="tag">Video</div>
+                            </div>
+                        </div>
+                                </a>
+                    </div>
+                </section>      
+                <section class="card2">
+                    <div class="card--grid">
+                        <div class="containerCard">
+                            <a class="internalCard" href="#" style="--bg-img: url(https://embed-ssl.wistia.com/deliveries/3a65f3766715786891c63f812768f034.jpg)">
+                            <div>
+                                <h1><b>Producto</b></h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, reiciendis.</p>
+                                <div class="date"><b>Edición de video</b></div>
+                                <div class="tags">
+                                <div class="tag">Premiere Pro</div>
+                                <div class="tag">Video</div>
+                            </div>
+                        </div>
+                                </a>
+                    </div>
+                </section>
+                <section class="card3">
+                    <div class="card--grid">
+                        <div class="containerCard">
+                            <a class="internalCard" href="#" style="--bg-img: url(https://boluda.com/files/curso-davincy-resolve.gif)">
+                            <div>
+                                <h1><b>Producto</b></h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, reiciendis.</p>
+                                <div class="date"><b>Edición de video</b></div>
+                                <div class="tags">
+                                <div class="tag">Da Vinci Resolve</div>
+                                <div class="tag">Video</div>
+                            </div>
+                        </div>
+                                </a>
+                    </div>
+                </section>
+                <section class="card4">
+                    <div class="card--grid">
+                        <div class="containerCard">
+                            <a class="internalCard" href="#" style="--bg-img: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Wondershare_filmora_logo.svg/2048px-Wondershare_filmora_logo.svg.png)">
+                            <div>
+                                <h1><b>Producto</b></h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, reiciendis.</p>
+                                <div class="date"><b>Edición de video</b></div>
+                                <div class="tags">
+                                <div class="tag">Wondershare Filmora</div>
+                                <div class="tag">Video</div>
+                            </div>
+                        </div>
+                                </a>
+                    </div>
+                </section>                
             </div>
-        </main>
+        </article>
+    </main>
 
-        <footer class="internal__difxFooter">
-            <p class="internal__aboutUs"><b>The DiFX Project |</b> <a class="footer-a" href="#">Sobre Nosotros</a> <a class="footer-a" href="#">Términos y Condiciones</a> <a class="footer-a" href="#">Contacto</a></p>
-            <p class="internal__social"><b>Redes Sociales |</b> <a class="footer-a" href="#">Facebook</a> <a class="footer-a" href="#">Instagram</a> <a class="footer-a" href="#">Twitter</a> <a class="footer-a" href="#">YouTube</a></p>
-            <p class="internal__copyright">© <b>DiFX.</b> 2022. <i>Todos los derechos reservados</i>.</p>
-        </footer>    
-    </div>
+    <!-- FOOTER -->
+    <footer class="difxFo8oter text-center text-lg-start bg-light text-muted">
+
+        <!-- Redes Sociales -->
+
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <!-- Texto -->
+        <div class="me-5 d-none d-lg-block">
+            <span>¡Únete a nuestras redes sociales!</span>
+        </div>
+
+        <!-- Logos Redes Sociales -->
+        <div>
+            <a href="" class="me-4 text-reset">
+            <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+            <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+        </section>
+
+        <!-- INFORMACIÓN  -->
+
+        <section class="">
+        <div class="container text-center text-md-start mt-5">
+            <div class="row mt-3">
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>The DiFX Project
+                </h6>
+                <p>
+                Creemos que aún quedan muchos talentos por descubrir en el arte digital, nuestra misión es acercarle las herramientas a los artistas de manera gratuita para aportar un grano de arena a su crecimiento.
+                </p>
+            </div>
+
+                <!-- SOBRE NOSOTROS -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h6 class="text-uppercase fw-bold mb-4">
+                Sobre Nosotros
+                </h6>
+                <p>
+                <a href="#!" class="text-reset">The DiFX Project</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">Roadmap</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">Colabora con nosotros</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">Términos y condiciones</a>
+                </p>
+            </div>
+                <!-- COMUNIDAD -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h6 class="text-uppercase fw-bold mb-4">
+                Comunidad
+                </h6>
+                <p>
+                <a href="#!" class="text-reset">DiFX Forums</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">Conviértete en DiFXer</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">NFT's</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">DiFX Token</a>
+                </p>
+            </div>
+                <!-- CONTACTO -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                <h6 class="text-uppercase fw-bold mb-4">
+                Contacto
+                </h6>
+                <i class="fas fa-envelope me-3"></i>
+                contact@thedifxproject.com
+                </p>
+                <p><i class="fas fa-phone me-3"></i> + 54 11 2593 9220</p>
+            </div>
+
+            </div>
+        </div>
+        </section>
+
+        <!-- COPYRIGHT -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2022 DiFX Copyright - En busca de más oportunidades
+        </div>
+
+    </footer>
+
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/difx.js"></script>
+
 </body>
+</html>
