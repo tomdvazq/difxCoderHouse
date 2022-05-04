@@ -1,0 +1,9 @@
+.importantWord{
+    background: #ff00c8; 
+    background: -webkit-linear-gradient(to right, #ff00c8, #9932cc); 
+    background: linear-gradient(to right, #ff00c8, #9932cc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}

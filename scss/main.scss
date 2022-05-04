@@ -1,0 +1,22 @@
+/* Bootstrap */
+
+@import 'vendors/bootstrap';
+
+@import 'abstracts/variables';
+
+/* Resets */
+@import 'base/fonts';
+@import 'base/reset';
+@import 'base/base';
+
+/* Detalles */
+@import 'abstracts/details';
+
+/* Secciones */ 
+@import 'layout/header';
+@import 'layout/main';
+
+/* Figuras */
+
+@import 'cards/cards';
+@import 'btns/btns';
