@@ -76,3 +76,76 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+@media screen and (min-width: $media-sm_Mobile){
+.difxMain--info__h1{
+    font-size: 35px;
+}
+
+.difxMain--info__p{
+    font-size: 18px;
+}
+
+.containerData h2{
+    font-size: 35px;
+}
+
+.containerData p{
+    font-size: 15px;
+}
+
+.containerData--btn span{
+    font-size: 13px;
+}
+}
+
+@media screen and (min-width: $media-md_Tablet){
+.difxMain--info__h1{
+    font-size: 50px;
+}
+
+.difxMain--info__p{
+    font-size: 20px;
+}
+
+.containerData h2{
+    font-size: 40px;
+}
+
+.containerData p{
+    font-size: 18px;
+}
+
+.containerData--btn span{
+    font-size: 15px;
+}
+}
+
+@media screen and (min-width: $media-xl-Desktop){ 
+.difxMain--info__h1{
+    font-size: 70px;
+    text-align: center;
+}
+
+.difxMain--info__p{
+    font-size: 20px;
+    text-align: center;
+}
+
+.difxMain--info__img{
+    width: 400px;
+    display: flex;
+    position: relative;
+    left: 80px;
+}
+}
+
+@media screen and (min-width: $media-xxl-Desktop){
+.difxMain--info__div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+}

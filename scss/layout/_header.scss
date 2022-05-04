@@ -30,12 +30,18 @@
 
 .dropdown-menu{
     margin-top: 0;
+    font-size: 18px;
+}
+
+.form-control{
+    font-size: 18px;
 }
 
 .btn{
     border-color: #9932cc;
     color: #9932cc;
     font-weight: bold;
+    font-size: 18px;
 }
 
 .btn:hover{
@@ -44,4 +50,44 @@
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23bc1cee' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23b61ddd' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23b11fcc' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23ab20bb' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23A622AA' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
     background-attachment: fixed;
     background-size: cover;
+}
+
+@media screen and (max-width: $media-max_Tablet) {
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    font-size: 80px;
+    position: relative;
+    bottom: 8px;
+}
+
+.navbar-toggler{
+    position: relative;
+    bottom: 5px;
+    margin: 0px 40px;
+    font-size: 25px;
+}
+
+.container-fluid{
+    padding: 0px;
+}
+
+#navbarSupportedContent{
+    position: relative;
+    bottom: 9px;
+    height: 100vh;
+    padding: 0px 50px;
+    color: white;
+    background-color: $backgroundNavbarCollapse;
+    z-index: 20;
+}
+
+#navbarSupportedContent .nav-link{
+    margin: 20px;
+    color: white;
+}
 }

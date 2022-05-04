@@ -5,6 +5,7 @@ $opacityCard: rgba(0,0,0, 0.5);
 $opacityShadow: rgba(0,0,0,0.4);
 $opacityShadowIntense: rgba(0,0,0,0.1);
 $backgroundCard: rgba(255, 255, 255, 0.5);
+$backgroundNavbarCollapse: rgba(0, 0, 0, 0.8);
 $difxColor: linear-gradient(#ff00c8, #9932cc);
 $botonCards: linear-gradient(315deg, #43cea2 0%, #185a9d 75%);
 
@@ -12,3 +13,12 @@ $botonCards: linear-gradient(315deg, #43cea2 0%, #185a9d 75%);
 /* Transitions */ 
 
 $transition-time: 1s;
+
+/* Breakpoints */
+
+$media-max_Tablet: 991px;
+$media-min_Desktop: 992px;
+$media-sm_Mobile: 575px;
+$media-md_Tablet: 767px;
+$media-xl-Desktop: 1119px;
+$media-xxl-Desktop: 1399px; 

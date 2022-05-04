@@ -1,7 +1,3 @@
-/* Bootstrap */
-
-@import 'vendors/bootstrap';
-
 @import 'abstracts/variables';
 
 /* Resets */
@@ -12,8 +8,10 @@
 /* Detalles */
 @import 'abstracts/details';
 
-/* Secciones */ 
+/* Secciones */
+/* - HEADER -*/ 
 @import 'layout/header';
+/* - MAIN -*/ 
 @import 'layout/main';
 
 /* Figuras */
