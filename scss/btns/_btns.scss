@@ -16,14 +16,13 @@
     border: none;
     background-size: 120% auto;
     background-image: $botonCards;
-}
-
-.difxbtn:hover {
-    background-position: right center;
-}
-
-.difxbtn:active {
-    top: 2px;
+        &:hover {
+            background-position: right center;
+        }
+        
+        &:active {
+            top: 2px;
+        }
 }
 
 .containerData--btn {
@@ -41,9 +40,9 @@
     border-radius: 5px;
     border: 2px solid #2c0b8e;
     background: #2c0b8e;
+        &:hover {
+            background: #fff;
+            color: #2c0b8e
+        }
 }
 
-.containerData--btn:hover {
-    background: #fff;
-    color: #2c0b8e
-}
