@@ -1,0 +1,46 @@
+.difxNav {
+    height: 80px;
+        .logo{
+            font-family: Bleach;
+            margin: 0px 40px;
+            font-size: 60px;
+            background-color: map-get($coloresHeader, logo);
+            background-image: map-get($coloresHeader, backgroundImg);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+        }
+        .difxLink{
+            font-size: 18px;
+        }            
+        .difxNav{
+            margin-right: 20px;
+                .nav-item:not(:last-child){
+                    margin-right: 20px;
+                }
+        }
+        .dropdown-toggle::after{
+            transition: transform 0.15s linear;
+        }
+        .show.dropdown{
+            .dropdown-toggle::after{
+                transform: translateY(3px);
+            }
+        }
+        .dropdown-menu{
+            margin-top: 0;
+        }
+        .btn{
+            border-color: map-get($coloresHeader, boton);
+            color: map-get($coloresHeader, boton);
+            font-weight: bold;
+                &:hover{
+                    transition: .5s;
+                    color: white;
+                    border-color: white;
+                    background-color: map-get($coloresHeader, backgroundBotonHover);
+                    background-image: map-get($coloresHeader, backgroundImg);
+                    background-attachment: fixed;
+                    background-size: cover;
+                }
+        }
+}

@@ -1,0 +1,20 @@
+// Variables SCSS. //
+@import 'abstracts/variables';
+
+/* Fuentes, Reset y Base */
+
+@import 'base/fonts';
+@import 'base/reset';
+@import 'base/base';
+
+/* Header */ 
+
+@import 'layout/header';
+
+/* Index Main */
+
+@import 'layout/main';
+
+/* Buttons */
+
+@import 'btns/btns'
