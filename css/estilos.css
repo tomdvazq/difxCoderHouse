@@ -313,7 +313,11 @@ font-size: 50px;
 line-height: 0px;
 }
 
-
+.camaraback{
+color: black;
+font-size: 50px;
+line-height: 0px;
+}
 
 /* --- BTNS --- */
 
@@ -363,7 +367,7 @@ background: #2c0b8e;
 }
 
 .containerData--btn:hover {
-background: #fff;
+background: red;
 color: #2c0b8e
 }
 

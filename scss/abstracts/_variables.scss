@@ -1,4 +1,12 @@
 // SCSS Set //
+// Variables //
+
+$darkBlue: #2c0b8e;
+$white: #fff;
+$violet: #ad2ead; 
+
+
+// => Mapeos <= // 
     // Header <== Colores característicos del footer //
 $coloresHeader: (
     logo: #731073,
@@ -12,6 +20,8 @@ $coloresHeader: (
 $coloresMain: (
     letras: white,
 );
+
+    // Mixins // 
 
 @mixin setText($c, $ta, $fs, $pad) {
     color: $c;
@@ -76,3 +86,20 @@ $coloresMain: (
     background-size: 120% auto;
     background-image: linear-gradient(315deg, #43cea2 0%, #185a9d 75%);
 };
+
+@mixin containerData() {
+    min-width: 130px;
+    height: 40px;
+    color: $white;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    bottom: 5px;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid $darkBlue;
+    background: $darkBlue;
+}

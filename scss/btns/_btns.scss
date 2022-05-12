@@ -9,3 +9,15 @@
         }
 }
 
+.containerData--btn{
+    @include containerData();
+    &:hover{
+        transition: 3s;
+        background: $violet;
+    }
+        p{
+            text-align: center;
+            margin: auto;
+            padding: auto;
+        }
+}

@@ -87,6 +87,8 @@ body {
   .difxCards h2 {
     font-size: 40px;
     color: white; }
+  .difxCards .card2 {
+    padding: 0px 20px; }
 
 /* CARD MARKETING*/
 .containerData {
@@ -261,3 +263,28 @@ body {
   .difxbtn:active {
     top: 1px;
     bottom: 1px; }
+
+.containerData--btn {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  bottom: 5px;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid #2c0b8e;
+  background: #2c0b8e; }
+  .containerData--btn:hover {
+    transition: 3s;
+    background: #ad2ead; }
+  .containerData--btn p {
+    text-align: center;
+    margin: auto;
+    padding: auto; }
+
+/* Internal Pages*/
