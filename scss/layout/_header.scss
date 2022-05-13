@@ -28,11 +28,13 @@
         }
         .dropdown-menu{
             margin-top: 0;
+            font-size: 15px;
         }
         .btn{
             border-color: map-get($coloresHeader, boton);
             color: map-get($coloresHeader, boton);
             font-weight: bold;
+            font-size: 15px;
                 &:hover{
                     transition: .5s;
                     color: white;
@@ -42,5 +44,8 @@
                     background-attachment: fixed;
                     background-size: cover;
                 }
+        }
+        .form-control{
+            font-size: 15px;
         }
 }

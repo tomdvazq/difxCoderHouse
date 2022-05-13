@@ -68,7 +68,7 @@
             width: 300px;
             height: 300px;
             perspective: 500px;
-/* CARD FX */
+// CARD FX //
             .difxData__card--content {
                 width: 100%;
                 height: 100%;
@@ -84,7 +84,7 @@
                 }
             }
 
-/* FRONT CARD*/
+// FRONT CARD//
             .card--content__front{
                 position: absolute;
                 height: 100%;
@@ -96,7 +96,7 @@
                 backface-visibility: hidden;
             }
             
-    /* LOGOS FRONT CARD */
+// LOGOS FRONT CARD //
             .bi-camera2{
                 @include iCardsFront();
             }
@@ -105,8 +105,8 @@
                 @extend .bi-camera2;
             }
 
-/* BACK CARD */
-    /* LOGOS BACK CARD*/
+// BACK CARD //
+    // LOGOS BACK CARD//
             .camaraback{
                 color: black;
                 font-size: 50px;
@@ -116,7 +116,7 @@
             .piggyBank--back{
                 @extend .camaraback;
             }
-    /* CONTENT BACK CARD*/
+    // CONTENT BACK CARD//
             .card--content__back{
                 @extend .card--content__front;
                 padding: 10px;
