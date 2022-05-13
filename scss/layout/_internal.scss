@@ -1,0 +1,122 @@
+// Data //
+
+.internalMain--data{
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 5px 0px black;
+        h1{
+            @include info(white, 25px, 5px 20px, none, bold);
+        }
+        h2{
+            @include info(white, 15px, 0px 20px, 5px 0px, none);
+        }
+        p{
+            @include info(white, 13px, 5px 20px, 5px 0px, none);
+        }
+}
+
+/* Cards */
+
+.internalMain--cards{
+        // CONTAINER FLEX CARDS //
+        .flex--container__cards{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        // CARD GRID //
+        .card--grid{
+            @include displays(grid, center, center);
+            @include gridCards(1fr, none, 4rem);
+            grid-template-rows: repeat(2, 1fr);
+            padding: 5rem;
+            margin: 0 auto;
+            width: max-content;
+                .containerCard{
+
+                    //DISEÑO DE LA CARD//
+
+                    .internalCard{
+                        @include cardsFx();
+                        @include bdMixin(20em, 15em, none, 1em, $white, 10px solid $white, 1.5em);
+                        @include displays(flex, none, flex-end);
+                        border-radius: 1em;
+                        background-size: cover;
+                        background-position: center;
+                        box-shadow: 0 0 5em -1em $black;
+                        position: relative;
+                        overflow: hidden;
+                        text-decoration: none;
+                            h1{
+                                margin: 0;
+                                font-size: 1.5em;
+                                line-height: 1.2em;
+                            }
+                            p{
+                                font-size: 0.75em;
+                                margin-top: 0.5em;
+                                line-height: 2em;
+                            }
+                            .tags{
+                                display: flex;
+                                    .tag{
+                                        font-size: 0.75em;
+                                        background: rgba(255,255,255,0.5);
+                                        border-radius: 0.3rem;
+                                        padding: 0 0.5em;
+                                        margin-right: 0.5em;
+                                        line-height: 1.5em;
+                                        transition: all, $transition;
+                                    }
+                            }
+                            &:hover{
+                                transform: rotate(0);
+                                color: map-get($internalCards, container);
+                                    .tags{
+                                            .tag{
+                                        background: map-get($internalCards, container);
+                                        color: white;
+                                        }
+                                    }
+                            }
+                            .date{
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                font-size: 0.75em;
+                                padding: 1em;
+                                line-height: 1em;
+                                opacity: .8;
+                            }
+                            &:after{
+                                background: white;
+                                width: 200%;
+                                height: 200%;
+                            }
+                            &:before{
+                                background: #ff00c8; 
+                                background: -webkit-linear-gradient(to right, #ff00c8, #9932cc); 
+                                background: linear-gradient(to right, #ff00c8, #9932cc);
+                                width: 250%;
+                                height: 250%;
+                            }
+                            &:before, &:after{
+                                content: '';
+                                transform: scale(0);
+                                transform-origin: top left;
+                                border-radius: 50%;
+                                position: absolute;
+                                left: -50%;
+                                top: -50%;
+                                z-index: -5;
+                                transition: all, $transition;
+                                transition-timing-function: ease-in-out;
+                            }
+                            &:hover:before, .card:hover:after{
+                                transform: scale(1);
+                            }
+                    }
+                }
+        }
+}
+
+

@@ -4,10 +4,25 @@
 $darkBlue: #2c0b8e;
 $white: #fff;
 $violet: #ad2ead; 
+$black: #000;
+
+// Basics Defaults Mixins //
+
+@mixin bdMixin($h, $w, $m, $pad, $c, $b, $fs){
+    height: $h;
+    width: $w;
+    margin: $m;
+    padding: $pad;
+    color: $c;
+    border: $b;
+    font-size: $fs;
+}
 
 
-// => Mapeos <= // 
+
     // Header <== Colores característicos del footer //
+        // => Mapeos <= // 
+
 $coloresHeader: (
     logo: #731073,
     boton: #9932cc,
@@ -103,3 +118,43 @@ $coloresMain: (
     border: 2px solid $darkBlue;
     background: $darkBlue;
 }
+
+    // Internal Pages //
+
+        // Variables //
+
+        $transition: 1s;
+        $filtroOpaco: 0.5;
+        $img: --bg-img;
+
+        // Mixins //
+
+@mixin info($c, $fs, $m, $pad, $fw){
+    color: $c;
+    font-size: $fs;
+    margin: $m;
+    padding: $pad;
+    font-weight: $fw;
+}
+
+@mixin displays($d, $jc, $ai){
+    display: $d;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+@mixin gridCards($gtc, $gtr, $gap){
+    grid-template-columns: $gtc;
+    grid-template-rows: $gtr;
+    gap: $gap;
+}
+
+@mixin cardsFx(){
+    background-image: linear-gradient(rgba(0,0,0,var($filtroOpaco)),rgba(0,0,0,var($filtroOpaco))), var($img);
+    transition: all, $transition;
+}
+        // Mapping//
+$internalCards: (
+    container: rgb(17, 17, 17)
+);
+

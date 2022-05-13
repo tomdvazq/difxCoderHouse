@@ -403,7 +403,7 @@ margin: 5px 20px;
 
 .internalMain--cards{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
 }
 
