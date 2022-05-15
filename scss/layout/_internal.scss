@@ -5,12 +5,21 @@
     box-shadow: 0px 0px 5px 0px black;
         h1{
             @include info(white, 25px, 5px 20px, none, bold);
+            @include int--mQuerie(tablet){
+                font-size: 40px;
+            }
         }
         h2{
             @include info(white, 15px, 0px 20px, 5px 0px, none);
+            @include int--mQuerie(tablet){
+                font-size: 17px;
+            }
         }
         p{
             @include info(white, 13px, 5px 20px, 5px 0px, none);
+            @include int--mQuerie(tablet){
+                font-size: 15px;
+            }
         }
 }
 
@@ -19,18 +28,24 @@
 .internalMain--cards{
         // CONTAINER FLEX CARDS //
         .flex--container__cards{
-            display: flex;
+            @include displays(flex, center, center);
+            flex-direction: row;
             flex-wrap: wrap;
-            justify-content: center;
         }
         // CARD GRID //
         .card--grid{
             @include displays(grid, center, center);
             @include gridCards(1fr, none, 4rem);
-            grid-template-rows: repeat(2, 1fr);
-            padding: 5rem;
+            grid-template-rows: 1fr;
+            padding: 2rem;
             margin: 0 auto;
             width: max-content;
+            @include int--mQuerie(tabletMin){
+                grid-template-columns: 1fr;
+            }
+            @include int--mQuerie(mobile500){
+                padding: 4rem 2rem;
+            }
                 .containerCard{
 
                     //DISEÑO DE LA CARD//

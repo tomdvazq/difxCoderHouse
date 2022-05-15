@@ -22,7 +22,7 @@ body {
     margin: 0px 40px;
     font-size: 60px;
     background-color: #731073;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg %3E%3Cpolygon fill='%239a3993' points='100 57.1 64 93.1 71.5 100.6 100 72.1'/%3E%3Cpolygon fill='%23b351ab' points='100 57.1 100 72.1 128.6 100.6 136.1 93.1'/%3E%3Cpolygon fill='%239a3993' points='100 163.2 100 178.2 170.7 107.5 170.8 92.4'/%3E%3Cpolygon fill='%23b351ab' points='100 163.2 29.2 92.5 29.2 107.5 100 178.2'/%3E%3Cpath fill='%23CC68C3' d='M100 21.8L29.2 92.5l70.7 70.7l70.7-70.7L100 21.8z M100 127.9L64.6 92.5L100 57.1l35.4 35.4L100 127.9z'/%3E%3Cpolygon fill='%239e0294' points='0 157.1 0 172.1 28.6 200.6 36.1 193.1'/%3E%3Cpolygon fill='%23b52aa9' points='70.7 200 70.8 192.4 63.2 200'/%3E%3Cpolygon fill='%23CC44BF' points='27.8 200 63.2 200 70.7 192.5 0 121.8 0 157.2 35.3 192.5'/%3E%3Cpolygon fill='%23b52aa9' points='200 157.1 164 193.1 171.5 200.6 200 172.1'/%3E%3Cpolygon fill='%239e0294' points='136.7 200 129.2 192.5 129.2 200'/%3E%3Cpolygon fill='%23CC44BF' points='172.1 200 164.6 192.5 200 157.1 200 157.2 200 121.8 200 121.8 129.2 192.5 136.7 200'/%3E%3Cpolygon fill='%239e0294' points='129.2 0 129.2 7.5 200 78.2 200 63.2 136.7 0'/%3E%3Cpolygon fill='%23CC44BF' points='200 27.8 200 27.9 172.1 0 136.7 0 200 63.2 200 63.2'/%3E%3Cpolygon fill='%23b52aa9' points='63.2 0 0 63.2 0 78.2 70.7 7.5 70.7 0'/%3E%3Cpolygon fill='%23CC44BF' points='0 63.2 63.2 0 27.8 0 0 27.8'/%3E%3C/g%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg %3E%3Cpolygon fill='%239a3993' breaks='100 57.1 64 93.1 71.5 100.6 100 72.1'/%3E%3Cpolygon fill='%23b351ab' breaks='100 57.1 100 72.1 128.6 100.6 136.1 93.1'/%3E%3Cpolygon fill='%239a3993' breaks='100 163.2 100 178.2 170.7 107.5 170.8 92.4'/%3E%3Cpolygon fill='%23b351ab' breaks='100 163.2 29.2 92.5 29.2 107.5 100 178.2'/%3E%3Cpath fill='%23CC68C3' d='M100 21.8L29.2 92.5l70.7 70.7l70.7-70.7L100 21.8z M100 127.9L64.6 92.5L100 57.1l35.4 35.4L100 127.9z'/%3E%3Cpolygon fill='%239e0294' breaks='0 157.1 0 172.1 28.6 200.6 36.1 193.1'/%3E%3Cpolygon fill='%23b52aa9' breaks='70.7 200 70.8 192.4 63.2 200'/%3E%3Cpolygon fill='%23CC44BF' breaks='27.8 200 63.2 200 70.7 192.5 0 121.8 0 157.2 35.3 192.5'/%3E%3Cpolygon fill='%23b52aa9' breaks='200 157.1 164 193.1 171.5 200.6 200 172.1'/%3E%3Cpolygon fill='%239e0294' breaks='136.7 200 129.2 192.5 129.2 200'/%3E%3Cpolygon fill='%23CC44BF' breaks='172.1 200 164.6 192.5 200 157.1 200 157.2 200 121.8 200 121.8 129.2 192.5 136.7 200'/%3E%3Cpolygon fill='%239e0294' breaks='129.2 0 129.2 7.5 200 78.2 200 63.2 136.7 0'/%3E%3Cpolygon fill='%23CC44BF' breaks='200 27.8 200 27.9 172.1 0 136.7 0 200 63.2 200 63.2'/%3E%3Cpolygon fill='%23b52aa9' breaks='63.2 0 0 63.2 0 78.2 70.7 7.5 70.7 0'/%3E%3Cpolygon fill='%23CC44BF' breaks='0 63.2 63.2 0 27.8 0 0 27.8'/%3E%3C/g%3E%3C/svg%3E");
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text; }
   .difxNav .difxLink {
@@ -48,7 +48,7 @@ body {
       color: white;
       border-color: white;
       background-color: #C11AFF;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg %3E%3Cpolygon fill='%239a3993' points='100 57.1 64 93.1 71.5 100.6 100 72.1'/%3E%3Cpolygon fill='%23b351ab' points='100 57.1 100 72.1 128.6 100.6 136.1 93.1'/%3E%3Cpolygon fill='%239a3993' points='100 163.2 100 178.2 170.7 107.5 170.8 92.4'/%3E%3Cpolygon fill='%23b351ab' points='100 163.2 29.2 92.5 29.2 107.5 100 178.2'/%3E%3Cpath fill='%23CC68C3' d='M100 21.8L29.2 92.5l70.7 70.7l70.7-70.7L100 21.8z M100 127.9L64.6 92.5L100 57.1l35.4 35.4L100 127.9z'/%3E%3Cpolygon fill='%239e0294' points='0 157.1 0 172.1 28.6 200.6 36.1 193.1'/%3E%3Cpolygon fill='%23b52aa9' points='70.7 200 70.8 192.4 63.2 200'/%3E%3Cpolygon fill='%23CC44BF' points='27.8 200 63.2 200 70.7 192.5 0 121.8 0 157.2 35.3 192.5'/%3E%3Cpolygon fill='%23b52aa9' points='200 157.1 164 193.1 171.5 200.6 200 172.1'/%3E%3Cpolygon fill='%239e0294' points='136.7 200 129.2 192.5 129.2 200'/%3E%3Cpolygon fill='%23CC44BF' points='172.1 200 164.6 192.5 200 157.1 200 157.2 200 121.8 200 121.8 129.2 192.5 136.7 200'/%3E%3Cpolygon fill='%239e0294' points='129.2 0 129.2 7.5 200 78.2 200 63.2 136.7 0'/%3E%3Cpolygon fill='%23CC44BF' points='200 27.8 200 27.9 172.1 0 136.7 0 200 63.2 200 63.2'/%3E%3Cpolygon fill='%23b52aa9' points='63.2 0 0 63.2 0 78.2 70.7 7.5 70.7 0'/%3E%3Cpolygon fill='%23CC44BF' points='0 63.2 63.2 0 27.8 0 0 27.8'/%3E%3C/g%3E%3C/svg%3E");
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg %3E%3Cpolygon fill='%239a3993' breaks='100 57.1 64 93.1 71.5 100.6 100 72.1'/%3E%3Cpolygon fill='%23b351ab' breaks='100 57.1 100 72.1 128.6 100.6 136.1 93.1'/%3E%3Cpolygon fill='%239a3993' breaks='100 163.2 100 178.2 170.7 107.5 170.8 92.4'/%3E%3Cpolygon fill='%23b351ab' breaks='100 163.2 29.2 92.5 29.2 107.5 100 178.2'/%3E%3Cpath fill='%23CC68C3' d='M100 21.8L29.2 92.5l70.7 70.7l70.7-70.7L100 21.8z M100 127.9L64.6 92.5L100 57.1l35.4 35.4L100 127.9z'/%3E%3Cpolygon fill='%239e0294' breaks='0 157.1 0 172.1 28.6 200.6 36.1 193.1'/%3E%3Cpolygon fill='%23b52aa9' breaks='70.7 200 70.8 192.4 63.2 200'/%3E%3Cpolygon fill='%23CC44BF' breaks='27.8 200 63.2 200 70.7 192.5 0 121.8 0 157.2 35.3 192.5'/%3E%3Cpolygon fill='%23b52aa9' breaks='200 157.1 164 193.1 171.5 200.6 200 172.1'/%3E%3Cpolygon fill='%239e0294' breaks='136.7 200 129.2 192.5 129.2 200'/%3E%3Cpolygon fill='%23CC44BF' breaks='172.1 200 164.6 192.5 200 157.1 200 157.2 200 121.8 200 121.8 129.2 192.5 136.7 200'/%3E%3Cpolygon fill='%239e0294' breaks='129.2 0 129.2 7.5 200 78.2 200 63.2 136.7 0'/%3E%3Cpolygon fill='%23CC44BF' breaks='200 27.8 200 27.9 172.1 0 136.7 0 200 63.2 200 63.2'/%3E%3Cpolygon fill='%23b52aa9' breaks='63.2 0 0 63.2 0 78.2 70.7 7.5 70.7 0'/%3E%3Cpolygon fill='%23CC44BF' breaks='0 63.2 63.2 0 27.8 0 0 27.8'/%3E%3C/g%3E%3C/svg%3E");
       background-attachment: fixed;
       background-size: cover; }
   .difxNav .form-control {
@@ -69,13 +69,44 @@ body {
   .difxMain .difxMain--info__h1 {
     color: white;
     text-align: center;
-    font-size: 28px;
+    font-size: 80px;
     padding: 0px 20px; }
+    @media (max-width: 1199px) and (min-width: 992px) {
+      .difxMain .difxMain--info__h1 {
+        font-size: 70px;
+        text-align: center; } }
+    @media (max-width: 991px) {
+      .difxMain .difxMain--info__h1 {
+        font-size: 55px; } }
+    @media (max-width: 767px) {
+      .difxMain .difxMain--info__h1 {
+        font-size: 40px; } }
+    @media (max-width: 575px) {
+      .difxMain .difxMain--info__h1 {
+        font-size: 35px; } }
   .difxMain .difxMain--info__p {
     color: white;
     text-align: center;
-    font-size: 17px;
-    padding: 0px 20px; }
+    font-size: 22px;
+    padding: 15px 20px; }
+    @media (max-width: 1199px) and (min-width: 992px) {
+      .difxMain .difxMain--info__p {
+        font-size: 17px;
+        text-align: center; } }
+    @media (max-width: 767px) {
+      .difxMain .difxMain--info__p {
+        font-size: 17px;
+        position: relative;
+        top: 20px; } }
+    @media (max-width: 575px) {
+      .difxMain .difxMain--info__p {
+        font-size: 18px; } }
+  @media (max-width: 1399px) {
+    .difxMain .difxMain--info__div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
 
 /* MAIN CARDS */
 /* CARDS REDIRECT */
@@ -113,10 +144,22 @@ body {
     color: white;
     text-align: center;
     font-size: 25px; }
+    @media (max-width: 767px) {
+      .containerData h2 {
+        font-size: 40px; } }
+    @media (max-width: 575px) {
+      .containerData h2 {
+        font-size: 35px; } }
   .containerData p {
     color: white;
     text-align: center;
     font-size: 12px; }
+    @media (max-width: 767px) {
+      .containerData p {
+        font-size: 18px; } }
+    @media (max-width: 575px) {
+      .containerData p {
+        font-size: 15px; } }
 
 /* CARD DATA */
 .difxData {
@@ -247,7 +290,7 @@ body {
   color: #fff;
   padding: 5px 10px;
   font-weight: bold;
-  cursor: pointer;
+  cursor: breaker;
   transition: all 0.3s ease;
   position: relative;
   left: 40px;
@@ -268,7 +311,7 @@ body {
   color: #fff;
   padding: 5px 10px;
   font-weight: bold;
-  cursor: pointer;
+  cursor: breaker;
   transition: all 0.3s ease;
   position: relative;
   bottom: 5px;
@@ -278,12 +321,18 @@ body {
   border: 2px solid #2c0b8e;
   background: #2c0b8e; }
   .containerData--btn:hover {
-    transition: 3s;
-    background: #ad2ead; }
+    transition: 1s;
+    border-color: none; }
   .containerData--btn p {
     text-align: center;
     margin: auto;
     padding: auto; }
+  @media (max-width: 767px) {
+    .containerData--btn span {
+      font-size: 15px; } }
+  @media (max-width: 575px) {
+    .containerData--btn span {
+      font-size: 13px; } }
 
 /* Internal Pages*/
 .internalMain--data {
@@ -295,24 +344,35 @@ body {
     margin: 5px 20px;
     padding: none;
     font-weight: bold; }
+    @media (min-width: 747px) {
+      .internalMain--data h1 {
+        font-size: 40px; } }
   .internalMain--data h2 {
     color: white;
     font-size: 15px;
     margin: 0px 20px;
     padding: 5px 0px;
     font-weight: none; }
+    @media (min-width: 747px) {
+      .internalMain--data h2 {
+        font-size: 17px; } }
   .internalMain--data p {
     color: white;
     font-size: 13px;
     margin: 5px 20px;
     padding: 5px 0px;
     font-weight: none; }
+    @media (min-width: 747px) {
+      .internalMain--data p {
+        font-size: 15px; } }
 
 /* Cards */
 .internalMain--cards .flex--container__cards {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap; }
 
 .internalMain--cards .card--grid {
   display: grid;
@@ -321,12 +381,19 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: none;
   gap: 4rem;
-  grid-template-rows: repeat(2, 1fr);
-  padding: 5rem;
+  grid-template-rows: 1fr;
+  padding: 2rem;
   margin: 0 auto;
   width: max-content; }
+  @media (min-width: 991px) {
+    .internalMain--cards .card--grid {
+      grid-template-columns: 1fr; } }
+  @media (min-width: 500px) {
+    .internalMain--cards .card--grid {
+      padding: 4rem 2rem; } }
   .internalMain--cards .card--grid .containerCard .internalCard {
-    background-image: linear-gradient(rgba(0, 0, 0, var(0.5)), rgba(0, 0, 0, var(0.5))), var(--bg-img);
+    background: rgba(0, 0, 0, 0.5) var(--bg-img);
+    background-blend-mode: darken;
     transition: all, 1s;
     height: 20em;
     width: 15em;

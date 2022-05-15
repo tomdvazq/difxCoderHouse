@@ -6,10 +6,45 @@
             @include important();
         }
         .difxMain--info__h1{
-            @include setText(white, center, 28px, 0px 20px);
+            @include setText(white, center, 80px, 0px 20px);
+            @include mQuerie(xlDesktop){
+                font-size: 70px;
+                text-align: center;
+            }
+            @include mQuerie(tabletMax){
+                font-size: 55px;
+            }
+            @include mQuerie(tablet){
+                font-size: 40px;
+            }
+            @include mQuerie(mobile){
+                font-size: 35px
+            }
         }
+
         .difxMain--info__p{
-            @include setText(white, center, 17px, 0px 20px);
+            @include setText(white, center, 22px, 15px 20px);
+            @include mQuerie(xlDesktop){
+                font-size: 17px;
+                text-align: center;
+            }
+            @include mQuerie(tablet){
+                font-size: 17px;
+                position: relative;
+                top: 20px;
+            }
+            @include mQuerie(mobile){
+                font-size: 18px;
+            }
+        }
+
+        @include mQuerie(xxlDesktop){
+            .difxMain--info__div{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
         }
 }
 
@@ -24,12 +59,18 @@
     flex-direction: row;
     flex-wrap: wrap;
     font-family: sans-serif;
+        @include mQuerie(desktopToTabletMin){
+            flex-direction: row;
+        }
         h2{
             font-size: 40px;
             color: white;
         }
         .card2{
             padding: 0px 20px;
+            @include mQuerie(desktopToTabletMin){
+                margin: 0px 20px;
+            }
         }
 }
 
@@ -51,9 +92,21 @@
         }
     h2{
         @include basicEditText(white, center, 25px);
+        @include mQuerie(tablet){
+            font-size: 40px;
+        }
+        @include mQuerie(mobile){
+            font-size: 35px;
+        }
     }
     p{
         @include basicEditText(white, center, 12px);
+        @include mQuerie(tablet){
+            font-size: 18px;
+        }
+        @include mQuerie (mobile){
+            font-size: 15px;
+        }
     }
 }
 
