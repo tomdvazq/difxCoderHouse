@@ -8,15 +8,15 @@
             background-image: map-get($coloresHeader, backgroundImg);
             -webkit-text-fill-color: transparent;
             -webkit-background-clip: text;
-            @include mQuerie(tabletToDesktopMax){
+            @include mQuerie(tabletMax){
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 width: 80px;
                 height: 80px;
-                font-size: 80px;
+                font-size: 70px;
                 position: relative;
-                bottom: 8px;
+                bottom: 4px;
             }
         }
         .difxLink{
@@ -58,10 +58,11 @@
         .form-control{
             font-size: 15px;
         }
-        @include mQuerie($desktopToTabletMax){
+        @include mQuerie(tabletMax){
             .navbar-toggler{
                 position: relative;
-                bottom: 10px;
+                font-size: 20px;
+                bottom: 6px;
                 margin: 0px 40px;
             }
 
@@ -71,12 +72,13 @@
 
             #navbarSupportedContent{
                 position: relative;
-                bottom: 9px;
+                bottom: 4px;
                 height: 100vh;
                 padding: 0px 50px;
                 color: white;
                 background-color: rgba(0, 0, 0, 0.8);
                 z-index: 20;
+                text-align: center;
             }
 
             #navbarSupportedContent .nav-link{
@@ -84,4 +86,4 @@
                 color: white;
             }
         }
-        }
+}
