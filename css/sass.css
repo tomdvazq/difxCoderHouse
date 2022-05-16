@@ -37,6 +37,8 @@ body {
         bottom: 4px; } }
   .difxNav .difxLink {
     font-size: 18px; }
+  .difxNav .nav-item {
+    padding: 0px 10px; }
   .difxNav .difxNav {
     margin-right: 20px; }
     .difxNav .difxNav .nav-item:not(:last-child) {
