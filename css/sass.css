@@ -141,7 +141,7 @@ body {
 /* MAIN CARDS */
 /* CARDS REDIRECT */
 .difxCards {
-  margin: 0px;
+  margin: 40px 0px;
   padding: 0px;
   display: flex;
   align-items: center;
@@ -154,10 +154,13 @@ body {
     color: white; }
   .difxCards .card2 {
     padding: 0px 20px; }
+    @media (max-width: 575px) {
+      .difxCards .card2 {
+        margin: 60px 0px; } }
 
 /* CARD MARKETING*/
 .containerData {
-  margin: 30px 0px;
+  margin: 80px 0px;
   padding: 10px;
   display: flex;
   justify-content: center;
@@ -169,7 +172,7 @@ body {
   .containerData:hover {
     transition: 1.3s;
     transform: scale(1.1);
-    box-shadow: 1px 1px 40px 1px violet; }
+    box-shadow: 1px 1px 40px 1px #a51fa5; }
   .containerData h2 {
     color: white;
     text-align: center;
@@ -189,14 +192,32 @@ body {
         font-size: 18px; } }
     @media (max-width: 575px) {
       .containerData p {
-        font-size: 15px; } }
+        padding: 0px 5px;
+        align-self: center;
+        font-size: 15px;
+        text-align: center; } }
+  .containerData button:hover {
+    transition: 1s;
+    background-color: #a51fa5;
+    border: solid 2px #82c3ee;
+    box-shadow: 0px 0px 40px 0px #731073; }
+    .containerData button:hover p {
+      color: white; }
+  @media (max-width: 575px) {
+    .containerData {
+      width: 350px;
+      height: 350px;
+      margin: 80px 80px; }
+      .containerData button {
+        position: relative;
+        top: 20px; } }
 
 /* CARD DATA */
 .difxData {
   display: flex;
   flex-wrap: wrap; }
   .difxData .difxData--card {
-    margin: 100px 0px;
+    margin: 10px 0px;
     top: 50%;
     left: 50%;
     width: 300px;
@@ -268,6 +289,11 @@ body {
   z-index: 10;
   transition: .7s;
   transform: translateY(100px); }
+  @media (max-width: 575px) {
+    .containerCards .difxCard--div .slide.slide1 {
+      z-index: none;
+      transition: none;
+      transform: none; } }
 
 .containerCards .difxCard--div .slide.slide2 {
   position: relative;
@@ -279,6 +305,10 @@ body {
   transition: .8s;
   transform: translateY(-100px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); }
+  @media (max-width: 575px) {
+    .containerCards .difxCard--div .slide.slide2 {
+      transition: none;
+      transform: none; } }
   .containerCards .difxCard--div .slide.slide2 .content p {
     margin: 0;
     padding: 0;
@@ -296,6 +326,9 @@ body {
 
 .containerCards .difxCard--div:hover .slide.slide1 {
   transform: translateY(0px); }
+  @media (max-width: 575px) {
+    .containerCards .difxCard--div:hover .slide.slide1 {
+      transform: none; } }
 
 .containerCards .difxCard--div:hover .slide.slide2 {
   transform: translateY(0); }
@@ -309,6 +342,9 @@ body {
     left: 50%;
     transform: translateX(-50%);
     background: #ffffff; }
+  @media (max-width: 575px) {
+    .containerCards .difxCard--div:hover .slide.slide2 {
+      transform: none; } }
 
 /* Buttons */
 .difxbtn {
@@ -395,6 +431,17 @@ body {
     @media (min-width: 747px) {
       .internalMain--data p {
         font-size: 15px; } }
+  .internalMain--data .fx-video {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    background: #ff00c8;
+    background: -webkit-linear-gradient(to right, #ff00c8, #9932cc);
+    background: linear-gradient(to right, #ff00c8, #9932cc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold; }
 
 /* Cards */
 .internalMain--cards .flex--container__cards {

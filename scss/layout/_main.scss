@@ -51,7 +51,7 @@
 /* MAIN CARDS */ 
     /* CARDS REDIRECT */ 
 .difxCards {
-    margin:0px;
+    margin: 40px 0px;
     padding: 0px;
     display: flex;
     align-items: center;
@@ -71,12 +71,15 @@
             @include mQuerie(desktopToTabletMin){
                 margin: 0px 20px;
             }
+            @include mQuerie(mobile){
+                margin: 60px 0px;
+            }
         }
 }
 
     /* CARD MARKETING*/
 .containerData{
-    margin: 30px 0px;
+    margin: 80px 0px;
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -88,7 +91,7 @@
         &:hover{
             transition: 1.3s;
             transform: scale(1.1);
-            box-shadow: 1px 1px 40px 1px violet;
+            box-shadow: 1px 1px 40px 1px rgb(165, 31, 165);
         }
     h2{
         @include basicEditText(white, center, 25px);
@@ -105,7 +108,30 @@
             font-size: 18px;
         }
         @include mQuerie (mobile){
+            padding: 0px 5px;
+            align-self: center;
             font-size: 15px;
+            text-align: center;
+        }
+    }
+    button{
+        &:hover{
+            transition: 1s;
+            background-color: rgb(165, 31, 165);
+            border: solid 2px rgb(130, 195, 238);
+            box-shadow: 0px 0px 40px 0px (map-get($coloresHeader, logo));
+            p{
+                color: rgb(255, 255, 255);
+            }
+        }
+    }
+    @include mQuerie(mobile){
+        width: 350px;
+        height: 350px;
+        margin: 80px 80px;
+        button{
+            position: relative;
+            top: 20px;
         }
     }
 }
@@ -115,7 +141,7 @@
     display: flex;
     flex-wrap: wrap;
         .difxData--card{
-            margin: 100px 0px;
+            margin: 10px 0px;
             top: 50%;
             left: 50%;
             width: 300px;
@@ -217,6 +243,11 @@
             z-index: 10;
             transition: .7s;
             transform: translateY(100px);
+            @include mQuerie(mobile){
+                z-index: none;
+                transition: none;
+                transform: none;
+            }
         }
         .slide.slide2{
             position: relative;
@@ -228,6 +259,10 @@
             transition: .8s;
             transform: translateY(-100px);
             box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            @include mQuerie(mobile){
+                transition: none;
+                transform: none;
+            }
                 .content{
                     p{
                         margin: 0;
@@ -250,6 +285,9 @@
         &:hover{
             .slide.slide1{
                 transform: translateY(0px);
+                @include mQuerie(mobile){
+                    transform: none;
+                }
             }
             .slide.slide2{
                 transform: translateY(0);
@@ -263,6 +301,9 @@
                         left: 50%;
                         transform: translateX(-50%);
                         background: #ffffff;
+                    }
+                    @include mQuerie(mobile){
+                        transform: none;
                     }
             }
         }
