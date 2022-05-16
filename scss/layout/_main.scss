@@ -90,8 +90,8 @@
     transform-style: preserve-3d;
         &:hover{
             transition: 1.3s;
-            transform: scale(1.1);
-            box-shadow: 1px 1px 40px 1px rgb(165, 31, 165);
+            transform: scale(1.0);
+            box-shadow: 1px 1px 20px 1px rgb(165, 31, 165);
         }
     h2{
         @include basicEditText(white, center, 25px);
@@ -126,13 +126,7 @@
         }
     }
     @include mQuerie(mobile){
-        width: 350px;
-        height: 350px;
-        margin: 80px 80px;
-        button{
-            position: relative;
-            top: 20px;
-        }
+        display: flex;
     }
 }
 
