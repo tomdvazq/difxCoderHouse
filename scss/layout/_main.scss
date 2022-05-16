@@ -94,7 +94,7 @@
             box-shadow: 1px 1px 20px 1px rgb(165, 31, 165);
         }
     h2{
-        @include basicEditText(white, center, 25px);
+        @include basicEditText(white, center, 40px);
         @include mQuerie(tablet){
             font-size: 40px;
         }
@@ -103,7 +103,7 @@
         }
     }
     p{
-        @include basicEditText(white, center, 12px);
+        @include basicEditText(white, center, 15px);
         @include mQuerie(tablet){
             font-size: 18px;
         }
@@ -115,11 +115,16 @@
         }
     }
     button{
+        background: #ff00c8; 
+        background: -webkit-linear-gradient(to right, #ff00c8, #9932cc); 
+        background: linear-gradient(to right, #ff00c8, #9932cc);
+        border: none;
+        box-shadow: none;
+        margin: 10px 0px;
         &:hover{
             transition: 1s;
-            background-color: rgb(165, 31, 165);
-            border: solid 2px rgb(130, 195, 238);
-            box-shadow: 0px 0px 40px 0px (map-get($coloresHeader, logo));
+            border: solid 1px rgb(130, 195, 238);
+            box-shadow: 0px 0px 20px 0px (map-get($coloresHeader, logo));
             p{
                 color: rgb(255, 255, 255);
             }
