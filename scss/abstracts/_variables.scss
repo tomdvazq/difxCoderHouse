@@ -200,6 +200,7 @@ $intDesktopToTabletMax: 990px;
 $intTablet: 747px;
 $intMobile: 500px;
 $intMobile--2: 450px;
+$intMobile--3: 400px;
 
     // Mixins Media Queries Internal //
 
@@ -218,5 +219,8 @@ $intMobile--2: 450px;
     }
     @else if $intBreak == mobile450{
         @media (min-width: $intMobile--2) { @content; }
+    }
+    @else if $intBreak == mobile400{
+        @media (max-width: $intMobile--3) { @content; }
     }
 }

@@ -1,146 +1,293 @@
+// Grid Container // 
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 80px 1fr auto;
+
+    .header-internal {
+        grid-area: header;
+        grid-column: span 5;
+        grid-row: 1;
+    }
+
+    .main-internal {
+        grid-area: main;
+        grid-column: span 5;
+        grid-row: 2;
+    }
+
+    .footer-internal {
+        grid-area: footer;
+        grid-column: span 5;
+        grid-row: 3;
+    }
+}
+
+
+
 // Data //
 
-.internalMain--data{
+.internalMain--data {
     background-color: rgba(0, 0, 0, 0.6);
     box-shadow: 0px 0px 5px 0px black;
-        h1{
-            @include info(white, 25px, 5px 20px, none, bold);
-            @include int--mQuerie(tablet){
-                font-size: 40px;
-            }
+
+    h1 {
+        @include info(white, 25px, 5px 20px, none, bold);
+
+        @include int--mQuerie(tablet) {
+            font-size: 40px;
         }
-        h2{
-            @include info(white, 15px, 0px 20px, 5px 0px, none);
-            @include int--mQuerie(tablet){
-                font-size: 17px;
-            }
+    }
+
+    h2 {
+        @include info(white, 15px, 0px 20px, 5px 0px, none);
+
+        @include int--mQuerie(tablet) {
+            font-size: 17px;
         }
-        p{
-            @include info(white, 13px, 5px 20px, 5px 0px, none);
-            @include int--mQuerie(tablet){
-                font-size: 15px;
-            }
+    }
+
+    p {
+        @include info(white, 13px, 5px 20px, 5px 0px, none);
+
+        @include int--mQuerie(tablet) {
+            font-size: 15px;
         }
-        .fx-video{
-            text-decoration: none;
-            color: white;
-            position: relative;
-            @include important();
-            &:hover{
-                
-            }
-        }
+    }
+
+    .fx-video {
+        text-decoration: none;
+        color: white;
+        position: relative;
+        @include important();
+
+        &:hover {}
+    }
 }
 
 /* Cards */
 
-.internalMain--cards{
-        // CONTAINER FLEX CARDS //
-        .flex--container__cards{
-            @include displays(flex, center, center);
-            flex-direction: row;
-            flex-wrap: wrap;
+.internalMain--cards {
+
+    // CONTAINER FLEX CARDS //
+    .flex--container__cards {
+        @include displays(flex, center, center);
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    // CARD GRID //
+    .card--grid {
+        @include displays(grid, center, center);
+        @include gridCards(1fr, none, 4rem);
+        grid-template-rows: 1fr;
+        padding: 2rem;
+        margin: 0 auto;
+        width: max-content;
+
+        @include int--mQuerie(tabletMin) {
+            grid-template-columns: 1fr;
         }
-        // CARD GRID //
-        .card--grid{
-            @include displays(grid, center, center);
-            @include gridCards(1fr, none, 4rem);
-            grid-template-rows: 1fr;
-            padding: 2rem;
-            margin: 0 auto;
-            width: max-content;
-            @include int--mQuerie(tabletMin){
-                grid-template-columns: 1fr;
-            }
-            @include int--mQuerie(mobile500){
-                padding: 4rem 2rem;
-            }
-                .containerCard{
 
-                    //DISEÑO DE LA CARD//
+        @include int--mQuerie(mobile500) {
+            padding: 4rem 2rem;
+        }
 
-                    .internalCard{
-                        @include cardsFx();
-                        @include bdMixin(20em, 15em, none, 1em, $white, 10px solid $white, 1.5em);
-                        @include displays(flex, none, flex-end);
-                        border-radius: 1em;
-                        background-size: cover;
-                        background-position: center;
-                        box-shadow: 0 0 5em -1em $black;
-                        position: relative;
-                        overflow: hidden;
-                        text-decoration: none;
-                            h1{
-                                margin: 0;
-                                font-size: 1.5em;
-                                line-height: 1.2em;
-                            }
-                            p{
-                                font-size: 0.75em;
-                                margin-top: 0.5em;
-                                line-height: 2em;
-                            }
-                            .tags{
-                                display: flex;
-                                    .tag{
-                                        font-size: 0.75em;
-                                        background: rgba(255,255,255,0.5);
-                                        border-radius: 0.3rem;
-                                        padding: 0 0.5em;
-                                        margin-right: 0.5em;
-                                        line-height: 1.5em;
-                                        transition: all, $transition;
-                                    }
-                            }
-                            &:hover{
-                                transform: rotate(0);
-                                color: map-get($internalCards, container);
-                                    .tags{
-                                            .tag{
-                                        background: map-get($internalCards, container);
-                                        color: white;
-                                        }
-                                    }
-                            }
-                            .date{
-                                position: absolute;
-                                top: 0;
-                                right: 0;
-                                font-size: 0.75em;
-                                padding: 1em;
-                                line-height: 1em;
-                                opacity: .8;
-                            }
-                            &:after{
-                                background: white;
-                                width: 200%;
-                                height: 200%;
-                            }
-                            &:before{
-                                background: #ff00c8; 
-                                background: -webkit-linear-gradient(to right, #ff00c8, #9932cc); 
-                                background: linear-gradient(to right, #ff00c8, #9932cc);
-                                width: 250%;
-                                height: 250%;
-                            }
-                            &:before, &:after{
-                                content: '';
-                                transform: scale(0);
-                                transform-origin: top left;
-                                border-radius: 50%;
-                                position: absolute;
-                                left: -50%;
-                                top: -50%;
-                                z-index: -5;
-                                transition: all, $transition;
-                                transition-timing-function: ease-in-out;
-                            }
-                            &:hover:before, .card:hover:after{
-                                transform: scale(1);
-                            }
+        .containerCard {
+
+            //DISEÑO DE LA CARD//
+
+            .internalCard {
+                @include cardsFx();
+                @include bdMixin(20em, 15em, none, 1em, $white, 10px solid $white, 1.5em);
+                @include displays(flex, none, flex-end);
+                border-radius: 1em;
+                background-size: cover;
+                background-position: center;
+                box-shadow: 0 0 5em -1em $black;
+                position: relative;
+                overflow: hidden;
+                text-decoration: none;
+
+                h1 {
+                    margin: 0;
+                    font-size: 1.5em;
+                    line-height: 1.2em;
+                }
+
+                p {
+                    font-size: 0.75em;
+                    margin-top: 0.5em;
+                    line-height: 2em;
+                }
+
+                .tags {
+                    display: flex;
+
+                    .tag {
+                        font-size: 0.75em;
+                        background: rgba(255, 255, 255, 0.5);
+                        border-radius: 0.3rem;
+                        padding: 0 0.5em;
+                        margin-right: 0.5em;
+                        line-height: 1.5em;
+                        transition: all, $transition;
                     }
                 }
+
+                &:hover {
+                    transform: rotate(0);
+                    color: map-get($internalCards, container);
+
+                    .tags {
+                        .tag {
+                            background: map-get($internalCards, container);
+                            color: white;
+                        }
+                    }
+                }
+
+                .date {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    font-size: 0.75em;
+                    padding: 1em;
+                    line-height: 1em;
+                    opacity: .8;
+                }
+
+                &:after {
+                    background: white;
+                    width: 200%;
+                    height: 200%;
+                }
+
+                &:before {
+                    background: #ff00c8;
+                    background: -webkit-linear-gradient(to right, #ff00c8, #9932cc);
+                    background: linear-gradient(to right, #ff00c8, #9932cc);
+                    width: 250%;
+                    height: 250%;
+                }
+
+                &:before,
+                &:after {
+                    content: '';
+                    transform: scale(0);
+                    transform-origin: top left;
+                    border-radius: 50%;
+                    position: absolute;
+                    left: -50%;
+                    top: -50%;
+                    z-index: -5;
+                    transition: all, $transition;
+                    transition-timing-function: ease-in-out;
+                }
+
+                &:hover:before,
+                .card:hover:after {
+                    transform: scale(1);
+                }
+            }
         }
+    }
 }
 
+/* Anuncio */
 
+.anuncio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+
+        .anuncio-container {
+            margin: 10px 0px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+            height: 200px;
+            background-color: white;
+
+            @include mQuerie(xlDesktop) {
+                flex-direction: column;
+                height: 100%;
+            }
+
+            @include mQuerie(tabletMax) {
+                flex-direction: column;
+                height: 100%;
+            }
+
+            img {
+                width: 400px;
+                height: 100%;
+
+                @include mQuerie(xxlDesktop) {
+                    width: 250px;
+                }
+
+                @include mQuerie(xlDesktop) {
+                    width: 100%;
+                }
+
+                @include mQuerie(tabletMax) {
+                    width: 100%;
+                }
+            }
+
+            .anuncio-info {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-right: auto;
+                margin-left: auto;
+                padding: 20px 0px;
+
+                h2 {
+                    padding: 0px 20px;
+                    text-align: center;
+                        span{
+                            @include important();
+                        }
+                }
+
+                button {
+                    height: 45px;
+                    margin-top: 20px;
+                    background-color: #9932cc;
+                    border: none;
+                    border: solid 2px black;
+
+                    p {
+                        margin: auto;
+                        font-size: 15px;
+                        color: white;
+                        font-weight: bold;
+                        text-align: center;
+                        padding: 10px;
+
+                        @include int--mQuerie(mobile400) {
+                            font-size: 13px;
+                            padding: 0px;
+                        }
+                    }
+
+                    @include int--mQuerie(mobile400) {
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+}
