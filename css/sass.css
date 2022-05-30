@@ -3,6 +3,10 @@
   font-family: Bleach;
   src: url(../fonts/Bleach.ttf); }
 
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat-VariableFont_wght.ttf); }
+
 * {
   margin: 0;
   padding: 0;
@@ -639,10 +643,10 @@ body {
             font-weight: bold;
             text-align: center;
             padding: 10px; }
-            @media (max-width: 400px) {
+            @media (max-width: 430px) {
               .anuncio a .anuncio-container .anuncio-info button p {
                 font-size: 13px;
                 padding: 0px; } }
-          @media (max-width: 400px) {
+          @media (max-width: 430px) {
             .anuncio a .anuncio-container .anuncio-info button {
               width: 80%; } }

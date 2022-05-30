@@ -201,6 +201,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     a {
         display: flex;
         justify-content: center;
@@ -257,9 +258,10 @@
                 h2 {
                     padding: 0px 20px;
                     text-align: center;
-                        span{
-                            @include important();
-                        }
+
+                    span {
+                        @include important();
+                    }
                 }
 
                 button {

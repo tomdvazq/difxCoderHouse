@@ -1,84 +1,98 @@
 /* PRINCIPAL SET */
 
-.difxMain{
+.difxMain {
     margin: 20px 0px;
-        span{
-            @include important();
-        }
-        .difxMain--info__h1{
-            @include setText(white, center, 80px, 0px 20px);
-            @include mQuerie(xlDesktop){
-                font-size: 70px;
-                text-align: center;
-            }
-            @include mQuerie(tabletMax){
-                font-size: 55px;
-            }
-            @include mQuerie(tablet){
-                font-size: 40px;
-            }
-            @include mQuerie(mobile){
-                font-size: 35px
-            }
+
+    span {
+        @include important();
+    }
+
+    .difxMain--info__h1 {
+        @include setText(white, center, 80px, 0px 20px);
+
+        @include mQuerie(xlDesktop) {
+            font-size: 70px;
+            text-align: center;
         }
 
-        .difxMain--info__p{
-            @include setText(white, center, 22px, 15px 20px);
-            @include mQuerie(xlDesktop){
-                font-size: 17px;
-                text-align: center;
-            }
-            @include mQuerie(tablet){
-                font-size: 17px;
-                position: relative;
-                top: 20px;
-            }
-            @include mQuerie(mobile){
-                font-size: 18px;
-            }
+        @include mQuerie(tabletMax) {
+            font-size: 55px;
         }
 
-        @include mQuerie(xxlDesktop){
-            .difxMain--info__div{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
+        @include mQuerie(tablet) {
+            font-size: 40px;
         }
+
+        @include mQuerie(mobile) {
+            font-size: 35px
+        }
+    }
+
+    .difxMain--info__p {
+        @include setText(white, center, 22px, 15px 20px);
+
+        @include mQuerie(xlDesktop) {
+            font-size: 17px;
+            text-align: center;
+        }
+
+        @include mQuerie(tablet) {
+            font-size: 17px;
+            position: relative;
+            top: 20px;
+        }
+
+        @include mQuerie(mobile) {
+            font-size: 18px;
+        }
+    }
+
+    @include mQuerie(xxlDesktop) {
+        .difxMain--info__div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 }
 
-/* MAIN CARDS */ 
-    /* CARDS REDIRECT */ 
+/* MAIN CARDS */
+/* CARDS REDIRECT */
 .difxCards {
     margin: 40px 0px;
     padding: 0px;
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
     font-family: sans-serif;
-        @include mQuerie(desktopToTabletMin){
-            flex-direction: row;
+
+    @include mQuerie(desktopToTabletMin) {
+        flex-direction: row;
+    }
+
+    h2 {
+        font-size: 40px;
+        color: white;
+    }
+
+    .card2 {
+        padding: 0px 20px;
+
+        @include mQuerie(desktopToTabletMin) {
+            margin: 0px 20px;
         }
-        h2{
-            font-size: 40px;
-            color: white;
+
+        @include mQuerie(mobile) {
+            margin: 60px 0px;
         }
-        .card2{
-            padding: 0px 20px;
-            @include mQuerie(desktopToTabletMin){
-                margin: 0px 20px;
-            }
-            @include mQuerie(mobile){
-                margin: 60px 0px;
-            }
-        }
+    }
 }
 
-    /* CARD MARKETING*/
-.containerData{
+/* CARD MARKETING*/
+.containerData {
     margin: 80px 0px;
     padding: 10px;
     display: flex;
@@ -88,140 +102,154 @@
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     transform-style: preserve-3d;
-        &:hover{
-            transition: 1.3s;
-            transform: scale(1.0);
-            box-shadow: 1px 1px 20px 1px rgb(165, 31, 165);
-        }
-    h2{
+
+    &:hover {
+        transition: 1.3s;
+        transform: scale(1.0);
+        box-shadow: 1px 1px 20px 1px rgb(165, 31, 165);
+    }
+
+    h2 {
         @include basicEditText(white, center, 40px);
-        @include mQuerie(tablet){
+
+        @include mQuerie(tablet) {
             font-size: 40px;
         }
-        @include mQuerie(mobile){
+
+        @include mQuerie(mobile) {
             font-size: 35px;
         }
     }
-    p{
+
+    p {
         @include basicEditText(white, center, 15px);
-        @include mQuerie(tablet){
+
+        @include mQuerie(tablet) {
             font-size: 18px;
         }
-        @include mQuerie (mobile){
+
+        @include mQuerie (mobile) {
             padding: 0px 5px;
             align-self: center;
             font-size: 15px;
             text-align: center;
         }
     }
-    button{
-        background: #ff00c8; 
-        background: -webkit-linear-gradient(to right, #ff00c8, #9932cc); 
+
+    button {
+        background: #ff00c8;
+        background: -webkit-linear-gradient(to right, #ff00c8, #9932cc);
         background: linear-gradient(to right, #ff00c8, #9932cc);
         border: none;
         box-shadow: none;
         margin: 10px 0px;
-        &:hover{
+
+        &:hover {
             transition: 1s;
             border: solid 1px rgb(130, 195, 238);
             box-shadow: 0px 0px 20px 0px (map-get($coloresHeader, logo));
-            p{
+
+            p {
                 color: rgb(255, 255, 255);
             }
         }
     }
-    @include mQuerie(mobile){
+
+    @include mQuerie(mobile) {
         display: flex;
     }
 }
 
-    /* CARD DATA */ 
-.difxData{
+/* CARD DATA */
+.difxData {
     display: flex;
     flex-wrap: wrap;
-        .difxData--card{
-            margin: 10px 0px;
-            top: 50%;
-            left: 50%;
-            width: 300px;
-            height: 300px;
-            perspective: 500px;
-// CARD FX //
+
+    .difxData--card {
+        margin: 10px 0px;
+        top: 50%;
+        left: 50%;
+        width: 300px;
+        height: 300px;
+        perspective: 500px;
+
+        // CARD FX //
+        .difxData__card--content {
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            transition: transform 1s;
+            transform-style: preserve-3d;
+        }
+
+        &:hover {
             .difxData__card--content {
-                width: 100%;
-                height: 100%;
-                box-shadow: 0 0 15px rgba(0,0,0,0.1);
-                transition: transform 1s;
-                transform-style: preserve-3d;
-            }
-
-            &:hover{
-                .difxData__card--content{
-                    transform: rotateY( 180deg ) ;
-                    transition: transform 0.5s;
-                }
-            }
-
-// FRONT CARD//
-            .card--content__front{
-                position: absolute;
-                height: 100%;
-                width: 100%;
-                background: rgba(0, 0, 0, 0.5);
-                color: #ffffff;
-                text-align: center;
-                border-radius: 5px;
-                backface-visibility: hidden;
-            }
-            
-// LOGOS FRONT CARD //
-            .bi-camera2{
-                @include iCardsFront();
-            }
-
-            .bi-piggy-bank-fill{
-                @extend .bi-camera2;
-            }
-
-// BACK CARD //
-    // LOGOS BACK CARD//
-            .camaraback{
-                color: black;
-                font-size: 50px;
-                line-height: 0px;
-            }
-
-            .piggyBank--back{
-                @extend .camaraback;
-            }
-    // CONTENT BACK CARD//
-            .card--content__back{
-                @extend .card--content__front;
-                padding: 10px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                background: rgba(255, 255, 255, 0.5);
-                color: rgb(0, 0, 0);
-                transform: rotateY( 180deg );
-            }
-    
-            .content--back__h2{
-                font-weight: bold;
-            }
-        
-            .content--back__p{
-                font-size: 15px;
-                overflow: hidden;
+                transform: rotateY(180deg);
+                transition: transform 0.5s;
             }
         }
+
+        // FRONT CARD//
+        .card--content__front {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            color: #ffffff;
+            text-align: center;
+            border-radius: 5px;
+            backface-visibility: hidden;
+        }
+
+        // LOGOS FRONT CARD //
+        .bi-camera2 {
+            @include iCardsFront();
+        }
+
+        .bi-piggy-bank-fill {
+            @extend .bi-camera2;
+        }
+
+        // BACK CARD //
+        // LOGOS BACK CARD//
+        .camaraback {
+            color: black;
+            font-size: 50px;
+            line-height: 0px;
+        }
+
+        .piggyBank--back {
+            @extend .camaraback;
+        }
+
+        // CONTENT BACK CARD//
+        .card--content__back {
+            @extend .card--content__front;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.5);
+            color: rgb(0, 0, 0);
+            transform: rotateY(180deg);
+        }
+
+        .content--back__h2 {
+            font-weight: bold;
+        }
+
+        .content--back__p {
+            font-size: 15px;
+            overflow: hidden;
+        }
+    }
 }
 
-    /* CARDS PRINCIPAL */ 
-.containerCards{
-    .difxCard--div{
-        .img--product{
+/* CARDS PRINCIPAL */
+.containerCards {
+    .difxCard--div {
+        .img--product {
             position: absolute;
             top: 0;
             left: 0;
@@ -229,12 +257,14 @@
             height: 100%;
             background: rgb(245, 245, 245);
         }
-        .slide{
+
+        .slide {
             width: 300px;
             height: 200px;
             transition: 0.5s;
         }
-        .slide.slide1{
+
+        .slide.slide1 {
             position: relative;
             display: flex;
             justify-content: center;
@@ -242,13 +272,15 @@
             z-index: 10;
             transition: .7s;
             transform: translateY(100px);
-            @include mQuerie(mobile){
+
+            @include mQuerie(mobile) {
                 z-index: none;
                 transition: none;
                 transform: none;
             }
         }
-        .slide.slide2{
+
+        .slide.slide2 {
             position: relative;
             display: flex;
             justify-content: center;
@@ -257,53 +289,61 @@
             box-sizing: border-box;
             transition: .8s;
             transform: translateY(-100px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-            @include mQuerie(mobile){
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+
+            @include mQuerie(mobile) {
                 transition: none;
                 transform: none;
             }
-                .content{
-                    p{
-                        margin: 0;
-                        padding: 0;
-                        font-size: 12px;
-                        text-align: center;
-                        color: #ffffff;
-                    }
-                    h3{
-                        margin: 0 0 10px 0;
-                        padding: 0;
-                        font-size: 24px;
-                        text-align: center;
-                        font-weight: bold;
-                        color: #ffffff;
-                        border: solid 4px white;
-                    }
+
+            .content {
+                p {
+                    margin: 0;
+                    padding: 0;
+                    font-size: 12px;
+                    text-align: center;
+                    color: #ffffff;
                 }
+
+                h3 {
+                    margin: 0 0 10px 0;
+                    padding: 0;
+                    font-size: 24px;
+                    text-align: center;
+                    font-weight: bold;
+                    color: #ffffff;
+                    border: solid 4px white;
+                }
+            }
         }
-        &:hover{
-            .slide.slide1{
+
+        &:hover {
+            .slide.slide1 {
                 transform: translateY(0px);
-                @include mQuerie(mobile){
+
+                @include mQuerie(mobile) {
                     transform: none;
                 }
             }
-            .slide.slide2{
+
+            .slide.slide2 {
                 transform: translateY(0);
-                    &::after{
-                        content: "";
-                        position: absolute;
-                        width: 30px;
-                        height: 4px;
-                        bottom: 15px;
-                        left: 50%;
-                        left: 50%;
-                        transform: translateX(-50%);
-                        background: #ffffff;
-                    }
-                    @include mQuerie(mobile){
-                        transform: none;
-                    }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 30px;
+                    height: 4px;
+                    bottom: 15px;
+                    left: 50%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background: #ffffff;
+                }
+
+                @include mQuerie(mobile) {
+                    transform: none;
+                }
             }
         }
     }

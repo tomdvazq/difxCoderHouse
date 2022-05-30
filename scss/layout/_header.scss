@@ -1,92 +1,105 @@
 .difxNav {
     height: 80px;
-        .logo{
-            font-family: Bleach;
-            margin: 0px 40px;
-            font-size: 60px;
-            background-color: map-get($coloresHeader, logo);
-            background-image: map-get($coloresHeader, backgroundImg);
-            -webkit-text-fill-color: transparent;
-            -webkit-background-clip: text;
-            @include mQuerie(tabletMax){
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 80px;
-                height: 80px;
-                font-size: 70px;
-                position: relative;
-                bottom: 4px;
-            }
+
+    .logo {
+        font-family: Bleach;
+        margin: 0px 40px;
+        font-size: 60px;
+        background-color: map-get($coloresHeader, logo);
+        background-image: map-get($coloresHeader, backgroundImg);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+
+        @include mQuerie(tabletMax) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            height: 80px;
+            font-size: 70px;
+            position: relative;
+            bottom: 4px;
         }
-        .difxLink{
-            font-size: 18px;
-        }
-        .nav-item{
-            padding: 0px 10px;
-        }            
-        .difxNav{
+    }
+
+    .difxLink {
+        font-size: 18px;
+    }
+
+    .nav-item {
+        padding: 0px 10px;
+    }
+
+    .difxNav {
+        margin-right: 20px;
+
+        .nav-item:not(:last-child) {
             margin-right: 20px;
-                .nav-item:not(:last-child){
-                    margin-right: 20px;
-                }
         }
-        .dropdown-toggle::after{
-            transition: transform 0.15s linear;
-        }
-        .show.dropdown{
-            .dropdown-toggle::after{
-                transform: translateY(3px);
-            }
-        }
-        .dropdown-menu{
-            margin-top: 0;
-            font-size: 15px;
-        }
-        .btn{
-            border-color: map-get($coloresHeader, boton);
-            color: map-get($coloresHeader, boton);
-            font-weight: bold;
-            font-size: 15px;
-                &:hover{
-                    transition: .5s;
-                    color: white;
-                    border-color: white;
-                    background-color: map-get($coloresHeader, backgroundBotonHover);
-                    background-image: map-get($coloresHeader, backgroundImg);
-                    background-attachment: fixed;
-                    background-size: cover;
-                }
-        }
-        .form-control{
-            font-size: 15px;
-        }
-        @include mQuerie(tabletMax){
-            .navbar-toggler{
-                position: relative;
-                font-size: 20px;
-                bottom: 6px;
-                margin: 0px 40px;
-            }
+    }
 
-            .container-fluid{
-                padding: 0px;
-            }
+    .dropdown-toggle::after {
+        transition: transform 0.15s linear;
+    }
 
-            #navbarSupportedContent{
-                position: relative;
-                bottom: 4px;
-                height: 100vh;
-                padding: 0px 50px;
-                color: white;
-                background-color: rgba(0, 0, 0, 0.8);
-                z-index: 20;
-                text-align: center;
-            }
-
-            #navbarSupportedContent .nav-link{
-                margin: 20px;
-                color: white;
-            }
+    .show.dropdown {
+        .dropdown-toggle::after {
+            transform: translateY(3px);
         }
+    }
+
+    .dropdown-menu {
+        margin-top: 0;
+        font-size: 15px;
+    }
+
+    .btn {
+        border-color: map-get($coloresHeader, boton);
+        color: map-get($coloresHeader, boton);
+        font-weight: bold;
+        font-size: 15px;
+
+        &:hover {
+            transition: .5s;
+            color: white;
+            border-color: white;
+            background-color: map-get($coloresHeader, backgroundBotonHover);
+            background-image: map-get($coloresHeader, backgroundImg);
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    }
+
+    .form-control {
+        font-size: 15px;
+    }
+
+    @include mQuerie(tabletMax) {
+        .navbar-toggler {
+            position: relative;
+            font-size: 20px;
+            bottom: 6px;
+            margin: 0px 40px;
+        }
+
+        .container-fluid {
+            padding: 0px;
+        }
+
+        #navbarSupportedContent {
+            position: relative;
+            bottom: 4px;
+            height: 100vh;
+            padding: 0px 50px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 20;
+            text-align: center;
+        }
+
+        #navbarSupportedContent .nav-link {
+            margin: 20px;
+            color: white;
+        }
+    }
 }

@@ -1,31 +1,37 @@
-.difxbtn{
+.difxbtn {
     @include botonCardOne;
-        &:hover{
-            background-position: right center;
-        }
-        &:active{
-            top: 1px;
-            bottom: 1px;
-        }
+
+    &:hover {
+        background-position: right center;
+    }
+
+    &:active {
+        top: 1px;
+        bottom: 1px;
+    }
 }
 
-.containerData--btn{
+.containerData--btn {
     @include containerData();
-    &:hover{
+
+    &:hover {
         transition: 1s;
         border-color: none;
     }
-        p{
-            text-align: center;
-            margin: auto;
-            padding: auto;
+
+    p {
+        text-align: center;
+        margin: auto;
+        padding: auto;
+    }
+
+    span {
+        @include mQuerie(tablet) {
+            font-size: 15px;
         }
-        span{
-            @include mQuerie(tablet){
-                font-size: 15px;
-            }
-            @include mQuerie(mobile){
-                font-size: 13px;
-            }
+
+        @include mQuerie(mobile) {
+            font-size: 13px;
         }
+    }
 }
