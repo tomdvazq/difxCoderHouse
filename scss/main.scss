@@ -1,24 +1,28 @@
 // Variables SCSS. //
 @import 'abstracts/variables';
 
-/* Fuentes, Reset y Base */
+// Pre Loader // 
+
+@import 'base/preloader';
+
+// Fuentes, Reset y Base //
 
 @import 'base/fonts';
 @import 'base/reset';
 @import 'base/base';
 
-/* Header */ 
+// Header // 
 
 @import 'layout/header';
 
-/* Index Main */
+// Index Main //
 
 @import 'layout/main';
 
-/* Buttons */
+// Buttons //
 
 @import 'btns/btns';
 
-/* Internal Pages*/ 
+// Internal Pages// 
 
 @import 'layout/internal';

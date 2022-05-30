@@ -20,7 +20,19 @@
     <title>DiFX: herramientas de creador</title>
 </head>
 
-<body>
+<body class="hidden">
+    <div class="load-center" id="onload">
+        <div class="lds-roller">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
     <!-- HEADER -->
     <header class="difxHeader">
         <nav class="difxNav navbar navbar-expand-lg navbar-light bg-light">
@@ -326,6 +338,8 @@
         </div>
 
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/difx.js"></script>
 </body>
